@@ -34,7 +34,6 @@ body {
     position: relative;
 }
 
-/* Background Canvas - High Performance Layer */
 #quantum-circuit-canvas {
     position: fixed;
     top: 0;
@@ -45,7 +44,6 @@ body {
     pointer-events: none;
 }
 
-/* Header */
 header {
     position: sticky;
     top: 0;
@@ -105,14 +103,12 @@ header {
     color: var(--primary);
 }
 
-/* Container */
 .main-content {
     max-width: 1240px;
     margin: 0 auto;
     padding: 2.5rem 2rem 5rem;
 }
 
-/* Card Base - Clean rendering, zero GPU lag */
 .glass-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -128,7 +124,6 @@ header {
     box-shadow: var(--shadow-md);
 }
 
-/* Hero Section */
 .hero-section {
     display: grid;
     grid-template-columns: 240px 1fr;
@@ -234,7 +229,6 @@ header {
     transform: translateY(-2px);
 }
 
-/* Icon Profiles Bar */
 .icon-profiles-bar {
     display: flex;
     flex-wrap: wrap;
@@ -302,7 +296,6 @@ header {
 .icon-btn.mathworks:hover { color: #d13c1c; border-color: #d13c1c; }
 .icon-btn.linkedin:hover { color: #0a66c2; border-color: #0a66c2; }
 
-/* Metrics */
 .metrics-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -348,7 +341,6 @@ header {
     font-weight: 600;
 }
 
-/* Accordion Components Across All Sections */
 .accordion-item {
     border: 1px solid var(--border-color);
     border-radius: 14px;
@@ -386,13 +378,8 @@ header {
     gap: 0.6rem;
 }
 
-.accordion-header span i {
-    color: var(--primary);
-}
-
-.accordion-header:hover {
-    background: #f8fafc;
-}
+.accordion-header span i { color: var(--primary); }
+.accordion-header:hover { background: #f8fafc; }
 
 .acc-icon {
     font-size: 0.85rem;
@@ -416,56 +403,43 @@ header {
     border-top: 1px solid #f1f5f9;
 }
 
-/* Journal Badges Grid */
-.journal-badges-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 0.85rem;
+/* Compact Chips for Peer Review */
+.compact-badges-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
     padding-top: 1.2rem;
 }
 
-.journal-tag {
+.journal-chip {
+    font-size: 0.83rem;
+    font-weight: 600;
+    padding: 0.45rem 0.85rem;
+    border-radius: 8px;
     background: #ffffff;
     border: 1px solid #e2e8f0;
     border-left-width: 4px;
-    border-radius: 10px;
-    padding: 0.85rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
-    transition: transform 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
-}
-
-.journal-tag:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-    border-color: #bae6fd;
-}
-
-.j-publisher {
-    font-size: 0.68rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-muted);
-}
-
-.j-name {
-    font-size: 0.88rem;
-    font-weight: 700;
     color: var(--text-title);
-    line-height: 1.4;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.journal-tag.border-blue { border-left-color: #0284c7; }
-.journal-tag.border-teal { border-left-color: #0d9488; }
-.journal-tag.border-indigo { border-left-color: #6366f1; }
-.journal-tag.border-rose { border-left-color: #f43f5e; }
-.journal-tag.border-amber { border-left-color: #f59e0b; }
-.journal-tag.border-emerald { border-left-color: #10b981; }
-.journal-tag.border-purple { border-left-color: #8b5cf6; }
-.journal-tag.border-cyan { border-left-color: #06b6d4; }
+.journal-chip:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.journal-chip.blue { border-left-color: #0284c7; }
+.journal-chip.teal { border-left-color: #0d9488; }
+.journal-chip.indigo { border-left-color: #6366f1; }
+.journal-chip.rose { border-left-color: #f43f5e; }
+.journal-chip.amber { border-left-color: #f59e0b; }
+.journal-chip.emerald { border-left-color: #10b981; }
+.journal-chip.purple { border-left-color: #8b5cf6; }
+.journal-chip.cyan { border-left-color: #06b6d4; }
+.journal-chip.dark { border-left-color: #475569; }
 
 /* Publications Grid & Color Cards */
 .pub-grid {
@@ -527,6 +501,18 @@ header {
 .pub-badge-q2 { background: #dbeafe; color: #1d4ed8; border: 1px solid #bfdbfe; }
 .pub-badge-q3 { background: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
 
+.format-badge {
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+}
+.format-badge.chapter { background: #f3e8ff; color: #7e22ce; border: 1px solid #e9d5ff; }
+.format-badge.proc { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+.format-badge.abstract { background: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+.format-badge.poster { background: #ccfbf1; color: #0f766e; border: 1px solid #99f6e4; }
+
 .pub-doi {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.78rem;
@@ -535,7 +521,6 @@ header {
 }
 .pub-doi:hover { text-decoration: underline; }
 
-/* Line Lists */
 .line-list {
     display: flex;
     flex-direction: column;
@@ -615,7 +600,6 @@ header {
 }
 .text-link:hover { text-decoration: underline; }
 
-/* Contact Email Cards */
 .contact-intro {
     text-align: center;
     max-width: 650px;
@@ -677,11 +661,8 @@ header {
     margin-top: 0.15rem;
 }
 
-.direct-email-card:hover .direct-val {
-    color: var(--primary);
-}
+.direct-email-card:hover .direct-val { color: var(--primary); }
 
-/* Footer */
 footer {
     border-top: 1px solid var(--border-color);
     text-align: center;
