@@ -1,16 +1,16 @@
 :root {
-    --bg-base: #f8fafc;
-    --bg-card: #ffffff;
-    --border-color: #e2e8f0;
+    --bg-base: #f1f5f9;
+    --bg-card: rgba(255, 255, 255, 0.88);
+    --border-color: rgba(226, 232, 240, 0.9);
     --primary: #0284c7;
     --primary-gradient: linear-gradient(135deg, #0284c7 0%, #4f46e5 50%, #7c3aed 100%);
     --accent: #0d9488;
     --text-title: #0f172a;
     --text-body: #334155;
     --text-muted: #64748b;
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
-    --shadow-md: 0 4px 14px rgba(0,0,0,0.05);
-    --shadow-hover: 0 8px 25px rgba(2, 132, 199, 0.12);
+    --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+    --shadow-md: 0 6px 18px rgba(15, 23, 42, 0.06);
+    --shadow-hover: 0 10px 30px rgba(2, 132, 199, 0.12);
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -21,7 +21,6 @@
     scroll-behavior: smooth;
 }
 
-/* Fix navbar covering headers when scrolling */
 .scroll-target {
     scroll-margin-top: 90px;
 }
@@ -35,7 +34,7 @@ body {
     position: relative;
 }
 
-/* Background Canvas */
+/* Background Canvas - High Contrast */
 #quantum-circuit-canvas {
     position: fixed;
     top: 0;
@@ -44,7 +43,7 @@ body {
     height: 100vh;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 /* Header */
@@ -52,7 +51,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
 }
@@ -114,9 +115,11 @@ header {
     padding: 2.5rem 2rem 5rem;
 }
 
-/* Card Base */
+/* Card Base with Semi-Transparent Glass to Show Background Canvas */
 .glass-card {
     background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
     border-radius: 18px;
     padding: 2.2rem;
@@ -210,7 +213,7 @@ header {
 }
 
 .tech-pill {
-    background: #f8fafc;
+    background: rgba(255, 255, 255, 0.9);
     border: 1px solid #e2e8f0;
     color: var(--text-body);
     font-size: 0.8rem;
@@ -308,7 +311,9 @@ header {
 }
 
 .metric-card {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1px solid var(--border-color);
     border-radius: 14px;
     padding: 1.5rem 1.2rem;
@@ -351,7 +356,9 @@ header {
     border-radius: 14px;
     margin-bottom: 1.2rem;
     overflow: hidden;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     box-shadow: var(--shadow-sm);
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -363,7 +370,7 @@ header {
 .accordion-header {
     width: 100%;
     padding: 1.2rem 1.6rem;
-    background: #ffffff;
+    background: transparent;
     border: none;
     outline: none;
     text-align: left;
@@ -388,7 +395,7 @@ header {
 }
 
 .accordion-header:hover {
-    background: #f8fafc;
+    background: rgba(248, 250, 252, 0.7);
 }
 
 .acc-icon {
@@ -410,8 +417,60 @@ header {
 
 .accordion-item.active .accordion-content {
     padding-bottom: 1.6rem;
-    border-top: 1px solid #f1f5f9;
+    border-top: 1px solid rgba(241, 245, 249, 0.8);
 }
+
+/* Journal Badges Grid (Reviewer Roles in Visual Cards) */
+.journal-badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0.85rem;
+    padding-top: 1.2rem;
+}
+
+.journal-tag {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left-width: 4px;
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    transition: transform 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
+}
+
+.journal-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    border-color: #bae6fd;
+}
+
+.j-publisher {
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+.j-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-title);
+    line-height: 1.4;
+}
+
+/* Color accents for journal publishers */
+.journal-tag.border-blue { border-left-color: #0284c7; }
+.journal-tag.border-teal { border-left-color: #0d9488; }
+.journal-tag.border-indigo { border-left-color: #6366f1; }
+.journal-tag.border-rose { border-left-color: #f43f5e; }
+.journal-tag.border-amber { border-left-color: #f59e0b; }
+.journal-tag.border-emerald { border-left-color: #10b981; }
+.journal-tag.border-purple { border-left-color: #8b5cf6; }
+.journal-tag.border-cyan { border-left-color: #06b6d4; }
 
 /* Publications Grid & Color Cards */
 .pub-grid {
@@ -563,24 +622,6 @@ header {
 }
 .text-link:hover { text-decoration: underline; }
 
-/* Academic Formatted Ordered List */
-.academic-ordered-list {
-    padding-left: 1.5rem;
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.academic-ordered-list li {
-    font-size: 0.9rem;
-    color: var(--text-body);
-    line-height: 1.55;
-}
-
-.academic-ordered-list li strong { color: var(--text-title); }
-.academic-ordered-list li em { color: var(--text-title); font-style: italic; }
-
 /* Contact Email Cards */
 .contact-intro {
     text-align: center;
@@ -654,7 +695,7 @@ footer {
     padding: 2.2rem 1rem;
     font-size: 0.85rem;
     color: var(--text-muted);
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 footer a { color: var(--primary); text-decoration: none; }
