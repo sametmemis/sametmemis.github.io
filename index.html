@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Samet Memiş | Academic Homepage & Lab</title>
-    <meta name="description" content="Official academic homepage of Dr. Samet Memiş. Multidisciplinary research in Soft Decision-Making, Fuzzy Sets & Matrices, Machine Learning, Quantum Computing, and Maritime AI.">
+    <meta name="description" content="Academic homepage of Dr. Samet Memiş. Research in Soft Decision-Making, Fuzzy Sets & Matrices, Machine Learning, Quantum Computing, and Maritime Decarbonization.">
     
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,14 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
-    <!-- Integrated PCB Circuits, Neural Network & Quantum Canvas -->
+    <!-- Integrated Multidisciplinary Canvas (Circuits, Neural Net & Quantum) -->
     <canvas id="quantum-circuit-canvas"></canvas>
 
-    <!-- Header -->
+    <!-- Header Navigation -->
     <header>
         <div class="nav-container">
             <a href="#" class="nav-brand">
@@ -28,19 +28,19 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience-section">Experience</a></li>
-                <li><a href="#editorial-section">Editorial &amp; Review</a></li>
-                <li><a href="#cost-section">COST Actions</a></li>
                 <li><a href="#publications-section">Publications</a></li>
                 <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#cost-section">COST Actions</a></li>
+                <li><a href="#editorial-section">Editorial &amp; Review</a></li>
                 <li><a href="#software-section">Software</a></li>
+                <li><a href="#experience-section">Experience</a></li>
                 <li><a href="#contact-section">Contact</a></li>
             </ul>
         </div>
     </header>
 
     <div class="main-content">
-        <!-- Hero Profile -->
+        <!-- Hero Section -->
         <section id="about" class="glass-card hero-section">
             <div class="avatar-wrap">
                 <img src="SM_Photo.jpeg" alt="Dr. Samet Memiş" class="avatar-img" onerror="this.src='https://avatars.githubusercontent.com/u/100412854?v=4'">
@@ -96,7 +96,7 @@
             </div>
         </section>
 
-        <!-- Academic Metrics -->
+        <!-- Metrics Display -->
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="metric-num">60+</div>
@@ -120,86 +120,386 @@
             </div>
         </div>
 
-        <!-- 1. Education & Appointments (Collapsible) -->
-        <section id="experience-section">
-            <!-- Education -->
+        <!-- 1. Publications Section (Colorful Q1/Q2 Hover Cards) -->
+        <section id="publications-section" class="scroll-target">
+            <!-- SCI / SCI-E / SSCI (All 18 Papers from PDF) -->
             <div class="accordion-item active">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-graduation-cap"></i> Education</span>
+                    <span><i class="fa-solid fa-award"></i> Articles Indexed SCI / SCI-E / SSCI (18 Articles)</span>
                     <i class="fa-solid fa-chevron-down acc-icon"></i>
                 </button>
                 <div class="accordion-content">
-                    <div class="line-list">
-                        <div class="line-row">
-                            <span class="line-period">2024</span>
-                            <div class="line-content">
-                                <strong>Associate Professorship</strong> &bull; Computer Science and Engineering (Turkish Interuniversity Board - ÜAK)
+                    <div class="pub-grid">
+                        <div class="pub-card border-green">
+                            <div class="pub-title">18. Green Human Resource Management: A Hybrid Soft Decision-Making Approach[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span><strong>Memiş S.</strong>, Yıldız R. Ö. &bull; <em>Management Decision</em> (Accepted / 2026)[cite: 2]</span>
+                                <span class="pub-badge-q1">SCI-E Q1</span>
+                                <a href="https://doi.org/10.1108/MD-06-2025-1700" target="_blank" class="pub-doi">DOI: 10.1108/MD-06-2025-1700</a>
                             </div>
                         </div>
-                        <div class="line-row">
-                            <span class="line-period">2016 &ndash; 2021</span>
-                            <div class="line-content">
-                                <strong>PhD in Applied Mathematics</strong> &bull; Çanakkale Onsekiz Mart University (Graduated 1st in Institute &bull; TÜBİTAK 2211-C Fellow)
+
+                        <div class="pub-card border-purple">
+                            <div class="pub-title">17. Operable Soft Decision-Making Methods in ifpifs-Matrices Space and Their Application to a PVA Problem in Image Denoising[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span>Binbaşıoğlu D., Şola Erduran F., Aydın T., <strong>Memiş S.</strong> &bull; <em>Soft Computing</em> (Accepted / 2026)[cite: 2]</span>
+                                <span class="pub-badge-q2">SCI-E Q2</span>
                             </div>
                         </div>
-                        <div class="line-row">
-                            <span class="line-period">2014 &ndash; 2016</span>
-                            <div class="line-content">
-                                <strong>MSc in Mathematics</strong> &bull; Çanakkale Onsekiz Mart University
+
+                        <div class="pub-card border-teal">
+                            <div class="pub-title">16. Integrating Experimental Findings and Machine Learning Models to Predict the Anticancer Potential of Newly Synthesized Oversulfated Fucoidan[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span>Kocabay S., <strong>Memiş S.</strong>, Taşkın I. İ., Sever M. R., Şener R. &bull; <em>Computational Biology and Chemistry</em>, 123, 109044 (2026)[cite: 2]</span>
+                                <span class="pub-badge-q1">SCI-E Q1</span>
+                                <a href="https://doi.org/10.1016/j.compbiolchem.2026.109044" target="_blank" class="pub-doi">DOI: 10.1016/j.compbiolchem.2026.109044</a>
                             </div>
                         </div>
-                        <div class="line-row">
-                            <span class="line-period">2010 &ndash; 2014</span>
-                            <div class="line-content">
-                                <strong>BSc in Mathematics</strong> &bull; Çanakkale Onsekiz Mart University
+
+                        <div class="pub-card border-blue">
+                            <div class="pub-title">15. Fuzzy Parameterized Fuzzy Soft Matrices-Based Failure Mode and Effects Analysis (FPFS-FMEA) with Ship Lubricating Oil System Risk Assessment[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span><strong>Memiş S.</strong>, Ceylan B. O. &bull; <em>Ocean Engineering</em>, 342, 123049 (2025)[cite: 2]</span>
+                                <span class="pub-badge-q1">SCI-E Q1</span>
+                                <a href="https://doi.org/10.1016/j.oceaneng.2025.123049" target="_blank" class="pub-doi">DOI: 10.1016/j.oceaneng.2025.123049</a>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-rose">
+                            <div class="pub-title">14. Prediction of Newly Synthesized Heparin Mimic's Effects as Heparanase Inhibitor in Cancer Treatments via Variational Quantum Neural Networks[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span>Kocabay S., Acar E., <strong>Memiş S.</strong>, Taşkın I. İ., Sever M. R., Şener R. &bull; <em>Computational Biology and Chemistry</em>, 118, 108476 (2025)[cite: 2]</span>
+                                <span class="pub-badge-q1">SCI-E Q1</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-indigo">
+                            <div class="pub-title">13. Adaptive Machine Learning Approaches Utilizing Soft Decision-Making via Intuitionistic Fuzzy Parameterized Intuitionistic Fuzzy Soft Matrices[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span><strong>Memiş S.</strong>, Şola Erduran F., Aydoğan H. &bull; <em>PeerJ Computer Science</em>, 11, e2703 (2025)[cite: 2]</span>
+                                <span class="pub-badge-q1">SCI-E Q1</span>
+                                <a href="https://doi.org/10.7717/peerj-cs.2703" target="_blank" class="pub-doi">DOI: 10.7717/peerj-cs.2703</a>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-amber">
+                            <div class="pub-title">12. Machinability of Different Cu-Gr Composites in Milling: Performance Parameters Prediction via Machine Learning Models[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span>Şap S., Acar A., Değirmenci Ü., Usca Ü. A., <strong>Memiş S.</strong>, Şener R. &bull; <em>Expert Systems with Applications</em>, 272, 126770 (2025)[cite: 2]</span>
+                                <span class="pub-badge-q1">SCI-E Q1</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-cyan">
+                            <div class="pub-title">11. OSMRD-IE: Octal-Based Shuffling and Multi-Layer Rotational Diffusing Image Encryption Using 2D Hybrid Michalewicz-Ackley Map[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span>Erkan U., Toktaş A., <strong>Memiş S.</strong>, Toktaş F., Lai Q., Wen H., Gao S. &bull; <em>IEEE Internet of Things Journal</em>, 11(21), 35113-35123 (2024)[cite: 2]</span>
+                                <span class="pub-badge-q1">SCI-E Q1</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-emerald">
+                            <div class="pub-title">10. A Review of Sustainable Supplier Selection with Decision-Making Methods from 2018 to 2022[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span>Karakoç Ö., <strong>Memiş S.</strong>, Sennaroğlu B. &bull; <em>Sustainability</em>, 16(1), 125 (2024)[cite: 2]</span>
+                                <span class="pub-badge-q2">SCI-E Q2</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-purple">
+                            <div class="pub-title">9. An Image Encryption Method Based on Multi-Space Confusion Using Hyperchaotic 2D Vincent Map Derived from Optimization Benchmark Function[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span>Erkan U., Toktaş A., <strong>Memiş S.</strong>, Lai Q., Hu G. &bull; <em>Nonlinear Dynamics</em>, 111(21), 20377-20405 (2023)[cite: 2]</span>
+                                <span class="pub-badge-q1">SCI-E Q1</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-teal">
+                            <div class="pub-title">8. Picture Fuzzy Soft Matrices and Application of Their Distance Measures to Supervised Learning: Picture Fuzzy Soft k-Nearest Neighbor (PFS-KNN)[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span><strong>Memiş S.</strong> &bull; <em>Electronics</em>, 12(19), 4129 (2023)[cite: 2]</span>
+                                <span class="pub-badge-q2">SCI-E Q2</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-blue">
+                            <div class="pub-title">7. Picture Fuzzy Parameterized Picture Fuzzy Soft Sets and Their Application in a Performance-Based Value Assignment Problem to Filters[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span><strong>Memiş S.</strong> &bull; <em>International Journal of Fuzzy Systems</em>, 25(7), 2860-2875 (2023)[cite: 2]</span>
+                                <span class="pub-badge-q1">SCI-E Q1</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-rose">
+                            <div class="pub-title">6. Distance and Similarity Measures of Intuitionistic Fuzzy Parameterized Intuitionistic Fuzzy Soft Matrices and Their Application in Supervised Learning[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span><strong>Memiş S.</strong>, Arslan B., Aydın T., Enginoğlu S., Camcı C. &bull; <em>Axioms</em>, 12(5), 463 (2023)[cite: 2]</span>
+                                <span class="pub-badge-q2">SCI-E Q2</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-indigo">
+                            <div class="pub-title">5. Fuzzy Parameterized Fuzzy Soft k-Nearest Neighbor Classifier (FPFS-kNN)[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span><strong>Memiş S.</strong>, Enginoğlu S., Erkan U. &bull; <em>Neurocomputing</em>, 500, 351-378 (2022)[cite: 2]</span>
+                                <span class="pub-badge-q2">SCI-E Q2</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-amber">
+                            <div class="pub-title">4. A New Classification Method Using Soft Decision-Making Based on An Aggregation Operator of Fuzzy Parameterized Fuzzy Soft Matrices[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span><strong>Memiş S.</strong>, Enginoğlu S., Erkan U. &bull; <em>Turkish Journal of Electrical Engineering &amp; Computer Sciences</em>, 30(3), 871-890 (2022)[cite: 2]</span>
+                                <span class="pub-badge-q3">SCI-E</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-green">
+                            <div class="pub-title">3. A Classification Method in Machine Learning Based on Soft Decision-Making via Fuzzy Parameterized Fuzzy Soft Matrices[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span><strong>Memiş S.</strong>, Enginoğlu S., Erkan U. &bull; <em>Soft Computing</em>, 26(3), 1165-1180 (2022)[cite: 2]</span>
+                                <span class="pub-badge-q2">SCI-E Q2</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-blue">
+                            <div class="pub-title">2. Numerical Data Classification via Distance-Based Similarity Measures of Fuzzy Parameterized Fuzzy Soft Matrices[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span><strong>Memiş S.</strong>, Enginoğlu S., Erkan U. &bull; <em>IEEE Access</em>, 9, 88583-88601 (2021)[cite: 2]</span>
+                                <span class="pub-badge-q1">SCI-E Q1</span>
+                            </div>
+                        </div>
+
+                        <div class="pub-card border-teal">
+                            <div class="pub-title">1. Pixel Similarity-Based Adaptive Riesz Mean Filter for Salt-and-Pepper Noise Removal[cite: 2]</div>
+                            <div class="pub-meta">
+                                <span>Enginoğlu S., Erkan U., <strong>Memiş S.</strong> &bull; <em>Multimedia Tools and Applications</em>, 78(24), 35401-35418 (2019)[cite: 2]</span>
+                                <span class="pub-badge-q2">SCI-E Q2</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Appointments -->
+            <!-- ESCI / SCOPUS (5 Articles) -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span><i class="fa-solid fa-database"></i> Articles Indexed ESCI / SCOPUS (5 Articles)[cite: 2]</span>
+                    <i class="fa-solid fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="pub-grid">
+                        <div class="pub-card border-emerald">
+                            <div class="pub-title">5. Predicting Student Success in Distance Education Utilizing Soft Matrix-Based Machine Learning via Moodle and Student Information Systems Data[cite: 2]</div>
+                            <div class="pub-meta"><span><strong>Memiş S.</strong>, Fatik S. Y. &bull; <em>Gazi University Journal of Science</em>, 39(2) (2026)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-blue">
+                            <div class="pub-title">4. Picture Fuzzy Topological Spaces with Picture Fuzzy Prevalence Effect Method for Group Decision-Making[cite: 2]</div>
+                            <div class="pub-meta"><span><strong>Memiş S.</strong>, Naeem K., Azeem S. &bull; <em>Turkish Journal of Mathematics and Computer Science</em>, 17(1), 212-231 (2025)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-purple">
+                            <div class="pub-title">3. Soft Decision-Making Methods Employing Multiple ifpifs-matrices and Their Applications: A Follow-Up Study[cite: 2]</div>
+                            <div class="pub-meta"><span>Arslan B., Aydın T., <strong>Memiş S.</strong>, Enginoğlu S. &bull; <em>São Paulo Journal of Mathematical Sciences</em>, 43, 1-39 (2024)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-teal">
+                            <div class="pub-title">2. Picture Fuzzy Soft &sigma;-Algebra and Picture Fuzzy Soft Measure with Applications[cite: 2]</div>
+                            <div class="pub-meta"><span>Naeem K., <strong>Memiş S.</strong> &bull; <em>Granular Computing</em>, 8, 397-410 (2022)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-indigo">
+                            <div class="pub-title">1. Adaptive Cesáro Mean Filter for Salt-and-Pepper Noise Removal[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., Erkan U., <strong>Memiş S.</strong> &bull; <em>El-Cezerî Journal of Science and Engineering</em>, 7(1), 304-314 (2020)[cite: 2]</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Peer-Reviewed Journals (18 Articles) -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span><i class="fa-solid fa-list-check"></i> Articles Indexed Other Indices (18 Articles)[cite: 2]</span>
+                    <i class="fa-solid fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="pub-grid">
+                        <div class="pub-card border-cyan">
+                            <div class="pub-title">18. Traditional and modern architectural design via the artificial intelligence Dall-E for Kıyıköy in Türkiye[cite: 2]</div>
+                            <div class="pub-meta"><span><strong>Memiş S.</strong>, Zağra Öz H. Ç., Özden Omuzlu S. &bull; <em>Amesia</em>, 6(1), 33-46[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-rose">
+                            <div class="pub-title">17. Classification of NOx Emission in Marine Engines Utilizing kNN-Based Machine Learning Algorithms[cite: 2]</div>
+                            <div class="pub-meta"><span><strong>Memiş S.</strong>, Şener R. &bull; <em>International Journal of Pioneering Technology and Engineering</em>, 3(2), 74-79 (2024)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-amber">
+                            <div class="pub-title">16. Mühendislik Eğitiminde Sanal Dershane Üzerine Bir Değerlendirme[cite: 2]</div>
+                            <div class="pub-meta"><span>Can A., <strong>Memiş S.</strong>, Bulut S., Acar E., Hatipoğlu S. &bull; <em>Tesisat Mühendisliği Dergisi</em>, 31(194), 7-14 (2023)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-indigo">
+                            <div class="pub-title">15. Diagnosing COVID-19, Prioritizing Treatment, and Planning Vaccination Priority via FPFS-Matrices[cite: 2]</div>
+                            <div class="pub-meta"><span>Parmaksız Z. P., Arslan B., <strong>Memiş S.</strong>, Enginoğlu S. &bull; <em>Journal of New Theory</em>, 2022(39), 54-83 (2022)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-emerald">
+                            <div class="pub-title">14. Another View on Picture Fuzzy Soft Sets and Their Product Operations with Decision-Making[cite: 2]</div>
+                            <div class="pub-meta"><span><strong>Memiş S.</strong> &bull; <em>Journal of New Theory</em>, 2022(38), 1-13 (2022)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-blue">
+                            <div class="pub-title">13. Generalisations of SDM Methods in fpfs-Matrices Space to Render Them Operable in ifpifs-Matrices Space[cite: 2]</div>
+                            <div class="pub-meta"><span>Arslan B., Aydın T., <strong>Memiş S.</strong>, Enginoğlu S. &bull; <em>Journal of New Theory</em>, 2021(36), 88-116 (2021)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-purple">
+                            <div class="pub-title">12. A Classification Method Based on Hamming Pseudo-Similarity of Intuitionistic Fuzzy Parameterized Intuitionistic Fuzzy Soft Matrices[cite: 2]</div>
+                            <div class="pub-meta"><span><strong>Memiş S.</strong>, Arslan B., Aydın T., Enginoğlu S., Camcı Ç. &bull; <em>Journal of New Results in Science</em>, 10(2), 59-76 (2021)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-teal">
+                            <div class="pub-title">11. SDM Methods' Configurations (2017-2019) and Their Application to a Performance-Based Value Assignment Problem[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., Aydın T., <strong>Memiş S.</strong>, Arslan B. &bull; <em>Annals of Optimization Theory and Practice</em>, 4(1), 41-85 (2021)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-cyan">
+                            <div class="pub-title">10. Different Adaptive Modified Riesz Mean Filter For High-Density Salt-and-Pepper Noise Removal in Grayscale Images[cite: 2]</div>
+                            <div class="pub-meta"><span><strong>Memiş S.</strong>, Erkan U. &bull; <em>European Journal of Science and Technology</em>, 2021(23), 359-367 (2021)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-rose">
+                            <div class="pub-title">9. Operability-Oriented Configurations of the Soft Decision-Making Methods Proposed between 2013 and 2016[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., Aydın T., <strong>Memiş S.</strong>, Arslan B. &bull; <em>Journal of New Theory</em>, 2021(34), 82-114 (2021)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-amber">
+                            <div class="pub-title">8. A New Approach to the Criteria-Weighted Fuzzy Soft Max-Min Decision-Making Method[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., <strong>Memiş S.</strong> &bull; <em>Journal of New Results in Science</em>, 9(1), 19-36 (2020)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-indigo">
+                            <div class="pub-title">7. A Data Classification Method in Machine Learning Based on Normalised Hamming Pseudo-Similarity of FPFS-Matrices[cite: 2]</div>
+                            <div class="pub-meta"><span><strong>Memiş S.</strong>, Enginoğlu S., Erkan U. &bull; <em>Bilge International Journal of Science and Technology Research</em>, 3, 1-8 (2019)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-emerald">
+                            <div class="pub-title">6. A New Approach to Group Decision-Making Method Based on TOPSIS Under Fuzzy Soft Environment[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., <strong>Memiş S.</strong>, Karaaslan F. &bull; <em>Journal of New Results in Science</em>, 8(2), 42-52 (2019)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-blue">
+                            <div class="pub-title">5. A Generalization of Fuzzy Soft Max-Min Decision-Making Method and Its Application to Image Denoising[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., <strong>Memiş S.</strong>, Çağman N. &bull; <em>El-Cezerî Journal of Science and Engineering</em>, 6(3), 466-481 (2019)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-purple">
+                            <div class="pub-title">4. Comment (2) on Soft Set Theory and uni-int Decision-Making[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., <strong>Memiş S.</strong>, Arslan B. &bull; <em>Journal of New Theory</em>, 25, 84-102 (2018)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-teal">
+                            <div class="pub-title">3. Comment on Soft Set Theory and uni-int Decision-Making[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., <strong>Memiş S.</strong>, Öngel T. &bull; <em>Journal of New Results in Science</em>, 7(3), 28-43 (2018)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-cyan">
+                            <div class="pub-title">2. Comment on "Fuzzy Soft Sets"[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., <strong>Memiş S.</strong> &bull; <em>International Journal of Latest Engineering Research and Applications</em>, 3(9), 1-9 (2018)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-green">
+                            <div class="pub-title">1. A Configuration of Some Soft Decision-Making Algorithms via fpfs-matrices[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., <strong>Memiş S.</strong> &bull; <em>Cumhuriyet Science Journal</em>, 39(4), 871-881 (2018)[cite: 2]</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proceedings & Book Chapter -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span><i class="fa-solid fa-users"></i> Book Chapters &amp; International Proceedings (20+ Works)[cite: 2]</span>
+                    <i class="fa-solid fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="pub-grid">
+                        <div class="pub-card border-purple">
+                            <div class="pub-title">Exponential Weighted Mean Filter for Salt-and-Pepper Noise Removal (Book Chapter)[cite: 2]</div>
+                            <div class="pub-meta"><span>Enginoğlu S., Erkan U., <strong>Memiş S.</strong> &bull; <em>Artificial Intelligence in Data and Big Data Processing (Springer Cham)</em>, pp. 435-446 (2022)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-blue">
+                            <div class="pub-title">Investigation of Reactivity Controlled Compression Ignition Fueled with Diesel and Natural Gas in Marine Engine using Soft Decision-Making[cite: 2]</div>
+                            <div class="pub-meta"><span>Şener R., <strong>Memiş S.</strong>, Kılıç A. &bull; <em>Global Maritime Congress (GMC)</em>, İstanbul (2024)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-emerald">
+                            <div class="pub-title">Parameter Sensitivity Analysis in the Picture Fuzzy Soft k-Nearest Neighbor Algorithm[cite: 2]</div>
+                            <div class="pub-meta"><span>Özpınar R., <strong>Memiş S.</strong> &bull; <em>ASES V. International Bandırma Scientific Studies Congress</em> (2025)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-amber">
+                            <div class="pub-title">Energy Planning via Picture Fuzzy Prevalence Effect Method[cite: 2]</div>
+                            <div class="pub-meta"><span>Karakoç Ö., <strong>Memiş S.</strong> &bull; <em>19th International Conference on Applied Sciences</em> (2025)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-teal">
+                            <div class="pub-title">Determining Water Quality Using Picture Fuzzy Soft KNN (PFS-KNN) and FPFS-KNN[cite: 2]</div>
+                            <div class="pub-meta"><span><strong>Memiş S.</strong> &bull; <em>EGE 10th International Conference on Applied Sciences</em> (2023)[cite: 2]</span></div>
+                        </div>
+                        <div class="pub-card border-rose">
+                            <div class="pub-title">Jaccard Pseudo-Similarity of Fuzzy Parameterized Fuzzy Soft Matrices and Its Application to Diagnosis of Parkinson's Disease[cite: 2]</div>
+                            <div class="pub-meta"><span><strong>Memiş S.</strong>, Enginoğlu S., Erkan U. &bull; <em>9th Iranian Joint Congress on Fuzzy and Intelligent Systems</em> (2022)[cite: 2]</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Research Projects Section (Exhaustive from CV) -->
+        <section id="projects-section" class="scroll-target">
             <div class="accordion-item active">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-briefcase"></i> Academic &amp; Administrative Roles</span>
+                    <span><i class="fa-solid fa-diagram-project"></i> Research Projects (Active &amp; Completed Grants)</span>
                     <i class="fa-solid fa-chevron-down acc-icon"></i>
                 </button>
                 <div class="accordion-content">
                     <div class="line-list">
+                        <!-- Project 1 -->
                         <div class="line-row">
-                            <span class="line-period">09/2024 &ndash; Present</span>
+                            <span class="line-badge r-d">Türk Loydu</span>
                             <div class="line-content">
-                                <strong>Head of Department</strong> &bull; Department of Marine Engineering, Maritime Faculty, Bandırma Onyedi Eylül University
+                                <strong>Ulusal Gemi Emisyon Veri Toplama, Doğrulama ve Raporlama Yazılım Platformunun Geliştirilmesi</strong><br>
+                                <em>Role: Researcher &bull; Supported by Türk Loydu Vakfı &bull; Ongoing</em><br>
+                                Platform architecture formulation for ship emission MRV/DCS data collection, automated validation algorithms, and fleet decarbonization analytics.
                             </div>
                         </div>
+
+                        <!-- Project 2 -->
                         <div class="line-row">
-                            <span class="line-period">03/2026 &ndash; Present</span>
+                            <span class="line-badge tubitak">TÜBİTAK 1002</span>
                             <div class="line-content">
-                                <strong>Quality Coordinator &amp; STCW Course Coordinator</strong> &bull; Maritime Faculty, Bandırma Onyedi Eylül University
+                                <strong>Bandırma Körfezi ve Limanı Kapsamında Rota Tabanlı Gemi Emisyonlarının ve Hava Kalitesinin Makine Öğrenmesi ile Modellenmesi</strong><br>
+                                <em>Role: Principal Investigator (Project Coordinator) &bull; Grant Active</em><br>
+                                Automated route tracking using dynamic AIS data, bottom-up maritime emission inventories, and supervised machine learning air quality forecasting in coastal ports.
                             </div>
                         </div>
+
+                        <!-- Project 3 -->
                         <div class="line-row">
-                            <span class="line-period">06/2024 &ndash; Present</span>
+                            <span class="line-badge tubitak">TÜBİTAK 1005</span>
                             <div class="line-content">
-                                <strong>Faculty Board &amp; Executive Board Member</strong> &bull; Maritime Faculty, Bandırma Onyedi Eylül University
+                                <strong>Akciğer Seslerinin Spektral Analizi ve Makine Öğrenmesi Yöntemleriyle Solunum Yolu Hastalıklarının Teşhisine Yönelik Mobil ve Web Tabanlı Karar Destek Sistemi</strong><br>
+                                <em>Role: Researcher &bull; Grant No: 123E473 &bull; Ongoing</em><br>
+                                Acoustic pulmonary signal processing, digital filter design, feature extraction, and automated clinical classification of COPD/Asthma.
                             </div>
                         </div>
+
+                        <!-- Project 4 -->
                         <div class="line-row">
-                            <span class="line-period">01/2024 &ndash; 09/2024</span>
+                            <span class="line-badge bap">BAP Research</span>
                             <div class="line-content">
-                                <strong>Co-Head of Department</strong> &bull; Department of Marine Engineering, Bandırma Onyedi Eylül University
+                                <strong>Gemi Yağlama Yağı Sistemi Hata Türü ve Etkileri Analizine Dayalı Risk Değerlendirmesinde Esnek Karar Verme Yöntemlerinin Geliştirilmesi</strong><br>
+                                <em>Role: Principal Investigator (Coordinator) &bull; Project ID: BAP-24-1004-009 &bull; Completed</em><br>
+                                Novel failure mode and effects analysis (FMEA) model based on fuzzy parameterized fuzzy soft matrices for critical ship machinery components.
                             </div>
                         </div>
+
+                        <!-- Project 5 -->
                         <div class="line-row">
-                            <span class="line-period">09/2021 &ndash; 06/2023</span>
+                            <span class="line-badge bap">BAP Research</span>
                             <div class="line-content">
-                                <strong>Vice Dean</strong> &bull; Faculty of Engineering and Natural Sciences, İstanbul Rumeli University
+                                <strong>Bulanık Parametreli Bulanık Esnek Matrisler ve Denetimli Öğrenmede Uygulamaları</strong><br>
+                                <em>Role: Researcher (Doctoral Dissertation Project) &bull; Completed</em><br>
+                                Theoretical construction of similarity measures and classification algorithms on soft matrices space.
                             </div>
                         </div>
+
+                        <!-- Project 6 -->
                         <div class="line-row">
-                            <span class="line-period">12/2021 &ndash; 06/2023</span>
+                            <span class="line-badge bap">BAP Research</span>
                             <div class="line-content">
-                                <strong>Head of Department</strong> &bull; Department of Computer Engineering, İstanbul Rumeli University
+                                <strong>Esnek Kümeler ve Esnek Matrisler Üzerine Bir İnceleme</strong><br>
+                                <em>Role: Researcher (MSc Thesis Project) &bull; Completed</em><br>
+                                Comprehensive mathematical modeling of decision-making algorithms based on soft matrix representations.
                             </div>
                         </div>
                     </div>
@@ -207,132 +507,11 @@
             </div>
         </section>
 
-        <!-- 2. Editorial & Peer Review (Collapsible) -->
-        <section id="editorial-section">
+        <!-- 3. COST Action Membership -->
+        <section id="cost-section" class="scroll-target">
             <div class="accordion-item active">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-feather-pointed"></i> Editorial</span>
-                    <i class="fa-solid fa-chevron-down acc-icon"></i>
-                </button>
-                <div class="accordion-content">
-                    <div class="line-list">
-                        <div class="line-row">
-                            <span class="line-period">01/2025 &ndash; Present</span>
-                            <div class="line-content"><strong>Section Editor</strong> &bull; Journal of Advanced Research in Natural and Applied Sciences[cite: 1]</div>
-                        </div>
-                        <div class="line-row">
-                            <span class="line-period">01/2024 &ndash; 12/2024</span>
-                            <div class="line-content"><strong>Editor</strong> &bull; Journal of Advanced Research in Natural and Applied Sciences[cite: 1]</div>
-                        </div>
-                        <div class="line-row">
-                            <span class="line-period">11/2023 &ndash; 12/2024</span>
-                            <div class="line-content"><strong>Editor</strong> &bull; Journal of Amasya University the Institute of Sciences and Technology[cite: 1]</div>
-                        </div>
-                        <div class="line-row">
-                            <span class="line-period">01/2023 &ndash; 12/2023</span>
-                            <div class="line-content"><strong>Section Editor</strong> &bull; Journal of New Theory[cite: 1]</div>
-                        </div>
-                        <div class="line-row">
-                            <span class="line-period">01/2022 &ndash; 12/2022</span>
-                            <div class="line-content"><strong>Production Editor</strong> &bull; Journal of New Theory[cite: 1]</div>
-                        </div>
-                        <div class="line-row">
-                            <span class="line-period">01/2021 &ndash; 12/2021</span>
-                            <div class="line-content"><strong>Production Editor</strong> &bull; Journal of New Results in Science[cite: 1]</div>
-                        </div>
-                        <div class="line-row">
-                            <span class="line-period">11/2019 &ndash; 12/2021</span>
-                            <div class="line-content"><strong>Layout Editor</strong> &bull; Journal of New Results in Science[cite: 1]</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-magnifying-glass"></i> Reviews Indexed SCI / SCI-E</span>
-                    <i class="fa-solid fa-chevron-down acc-icon"></i>
-                </button>
-                <div class="accordion-content">
-                    <ol class="academic-ordered-list">
-                        <li>IEEE Transactions on Fuzzy Systems (2025, 2026)[cite: 1]</li>
-                        <li>IEEE Transactions on Systems, Man, and Cybernetics: Systems (2026)[cite: 1]</li>
-                        <li>IEEE Transactions on Multimedia (2026)[cite: 1]</li>
-                        <li>IEEE Access (2021, 2023-2024)[cite: 1]</li>
-                        <li>Neural Computing with Applications (2024-2025)[cite: 1]</li>
-                        <li>Multimedia Tools and Applications (2025-2026)[cite: 1]</li>
-                        <li>Soft Computing (2021-2022)[cite: 1]</li>
-                        <li>Applied Intelligence (2024-2025)[cite: 1]</li>
-                        <li>International Journal of Fuzzy Systems (2020, 2024-2026)[cite: 1]</li>
-                        <li>Journal of Intelligent &amp; Fuzzy Systems (2019-2023)[cite: 1]</li>
-                        <li>Complex &amp; Intelligent Systems (2021, 2023-2024)[cite: 1]</li>
-                        <li>Ocean Engineering (2025-2026)</li>
-                        <li>Ships and Offshore Structures (2025-2026)[cite: 1]</li>
-                        <li>Scientific Reports (2023, 2025)[cite: 1]</li>
-                        <li>Management Decision (2022, 2025)[cite: 1]</li>
-                        <li>PeerJ Computer Science (2024)[cite: 1]</li>
-                        <li>Big Data Research (2024)[cite: 1]</li>
-                        <li>Advances in Engineering Software (2022)[cite: 1]</li>
-                        <li>Journal of Ambient Intelligence and Humanized Computing (2020-2023)[cite: 1]</li>
-                        <li>International Journal of Intelligent Systems (2020-2022)[cite: 1]</li>
-                        <li>Turkish Journal of Electrical Engineering &amp; Computer Science (2021, 2022)[cite: 1]</li>
-                        <li>Turkish Journal of Mathematics (2021)[cite: 1]</li>
-                        <li>Mathematical Problems in Engineering (2021)[cite: 1]</li>
-                        <li>Mathematics (2021)[cite: 1]</li>
-                        <li>The Imaging Science Journal (2022)[cite: 1]</li>
-                        <li>Signal, Image and Video Processing (2022)[cite: 1]</li>
-                        <li>Symmetry (2022)[cite: 1]</li>
-                        <li>International Journal of Biomathematics (2022)[cite: 1]</li>
-                        <li>Applied Sciences (2022-2023)[cite: 1]</li>
-                        <li>Sustainability (2022-2023)[cite: 1]</li>
-                        <li>Energies (2023)[cite: 1]</li>
-                        <li>Bioengineering (2023)[cite: 1]</li>
-                        <li>Electronics (2023)[cite: 1]</li>
-                        <li>Processes (2023)[cite: 1]</li>
-                        <li>Sensors (2023)[cite: 1]</li>
-                        <li>Buildings (2023)[cite: 1]</li>
-                        <li>Plos One (2024)[cite: 1]</li>
-                        <li>Journal of Circuits, Systems and Computers (2025)[cite: 1]</li>
-                        <li>Journal of the Faculty of Engineering and Architecture of Gazi University (2025)[cite: 1]</li>
-                        <li>International Journal of Modern Physics C (2025)[cite: 1]</li>
-                        <li>Operational Research (2025)[cite: 1]</li>
-                        <li>IETE Journal of Research (2026)[cite: 1]</li>
-                    </ol>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-list-check"></i> Reviews Indexed ESCI &amp; Others</span>
-                    <i class="fa-solid fa-chevron-down acc-icon"></i>
-                </button>
-                <div class="accordion-content">
-                    <ol class="academic-ordered-list">
-                        <li>IEEE Transactions on Artificial Intelligence (2025)[cite: 1]</li>
-                        <li>Discover Artificial Intelligence (2025)[cite: 1]</li>
-                        <li>Big Data and Cognitive Computing (2023)[cite: 1]</li>
-                        <li>Journal of ETA Maritime Science (2026)[cite: 1]</li>
-                        <li>Pamukkale University Journal of Engineering Sciences (2021)[cite: 1]</li>
-                        <li>Journal of Control, Automation and Electrical Systems (2024-2025)[cite: 1]</li>
-                        <li>Automatika (2025)[cite: 1]</li>
-                        <li>Sigma Journal of Engineering and Natural Sciences (2025)[cite: 1]</li>
-                        <li>Information (2022)[cite: 1]</li>
-                        <li>TWMS Journal of Applied and Engineering Mathematics (2022)[cite: 1]</li>
-                        <li>Indonesian Journal of Electrical Engineering and Informatics (2022)[cite: 1]</li>
-                        <li>TELKOMNIKA (2022)[cite: 1]</li>
-                        <li>International Journal of Sensors, Wireless Communications and Control (2022)[cite: 1]</li>
-                        <li>Journal of Quantum Technologies and Informatics Research (2024, 2025)[cite: 1]</li>
-                        <li>Journal of New Theory (2020-2021)[cite: 1]</li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. COST Actions (Collapsible & Line-by-Line) -->
-        <section id="cost-section">
-            <div class="accordion-item active">
-                <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-earth-europe"></i> COST Action Membership</span>
+                    <span><i class="fa-solid fa-earth-europe"></i> COST Action Membership (8 European Actions)</span>
                     <i class="fa-solid fa-chevron-down acc-icon"></i>
                 </button>
                 <div class="accordion-content">
@@ -390,160 +569,135 @@
             </div>
         </section>
 
-        <!-- 4. Publications (All Categories Collapsible & Line-by-Line) -->
-        <section id="publications-section">
-            <!-- SCI / SCI-E / SSCI (All 18 Papers) -->
+        <!-- 4. Editorial & Peer Review -->
+        <section id="editorial-section" class="scroll-target">
+            <!-- Editorial Roles -->
             <div class="accordion-item active">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-book-bookmark"></i> Articles Indexed SCI / SCI-E / SSCI</span>
-                    <i class="fa-solid fa-chevron-down acc-icon"></i>
-                </button>
-                <div class="accordion-content">
-                    <ol class="academic-ordered-list">
-                        <li>Enginoğlu S., Erkan U., <strong>Memiş S.</strong>, 2019. Pixel Similarity-Based Adaptive Riesz Mean Filter for Salt-and-Pepper Noise Removal, <em>Multimedia Tools and Applications</em>, 78(24), 35401-35418.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Enginoğlu S., Erkan U., 2021. Numerical Data Classification via Distance-Based Similarity Measures of Fuzzy Parameterized Fuzzy Soft Matrices, <em>IEEE Access</em>, 9, 88583-88601.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Enginoğlu S., Erkan U., 2022. A Classification Method in Machine Learning Based on Soft Decision-Making via Fuzzy Parameterized Fuzzy Soft Matrices, <em>Soft Computing</em>, 26(3), 1165-1180.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Enginoğlu S., Erkan U., 2022. A New Classification Method Using Soft Decision-Making Based on An Aggregation Operator of Fuzzy Parameterized Fuzzy Soft Matrices, <em>Turkish Journal of Electrical Engineering &amp; Computer Sciences</em>, 30(3), 871-890.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Enginoğlu S., Erkan U., 2022. Fuzzy Parameterized Fuzzy Soft k-Nearest Neighbor Classifier, <em>Neurocomputing</em>, 500, 351-378.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Arslan B., Aydın T., Enginoğlu S., Camcı C., 2023. Distance and Similarity Measures of Intuitionistic Fuzzy Parameterized Intuitionistic Fuzzy Soft Matrices and Their Application in Supervised Learning, <em>Axioms</em>, 12(5), 463.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, 2023. Picture Fuzzy Parameterized Picture Fuzzy Soft Sets and Their Application in a Performance-Based Value Assignment Problem to Salt-and-Pepper Noise Removal Filters, <em>International Journal of Fuzzy Systems</em>, 25(7), 2860-2875.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, 2023. Picture Fuzzy Soft Matrices and Application of Their Distance Measures to Supervised Learning: Picture Fuzzy Soft k-Nearest Neighbor (PFS-KNN), <em>Electronics</em>, 12(19), 4129.[cite: 2]</li>
-                        <li>Erkan U., Toktaş A., <strong>Memiş S.</strong>, Lai Q., Hu G., 2023. An Image Encryption Method Based on Multi-Space Confusion Using Hyperchaotic 2D Vincent Map Derived from Optimization Benchmark Function, <em>Nonlinear Dynamics</em>, 111(21), 20377-20405.[cite: 2]</li>
-                        <li>Karakoç Ö., <strong>Memiş S.</strong>, Sennaroğlu B., 2024. A Review of Sustainable Supplier Selection with Decision-Making Methods from 2018 to 2022, <em>Sustainability</em>, 16(1), 125.[cite: 2]</li>
-                        <li>Erkan U., Toktaş A., <strong>Memiş S.</strong>, Toktaş F., Lai Q., Wen H., Gao S., 2024. OSMRD-IE: Octal-Based Shuffling and Multi-Layer Rotational Diffusing Image Encryption Using 2D Hybrid Michalewicz-Ackley Map, <em>IEEE Internet of Things Journal</em>, 11(21), 35113-35123.[cite: 2]</li>
-                        <li>Şap S., Acar A., Değirmenci Ü., Usca Ü. A., <strong>Memiş S.</strong>, Şener R., 2025. Machinability of Different Cu-Gr Composites in Milling: Performance Parameters Prediction via Machine Learning Models, <em>Expert Systems with Applications</em>, 272, 126770.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Şola Erduran F., Aydoğan H., 2025. Adaptive Machine Learning Approaches Utilizing Soft Decision-Making via Intuitionistic Fuzzy Parameterized Intuitionistic Fuzzy Soft Matrices, <em>PeerJ Computer Science</em>, 11, e2703.[cite: 2]</li>
-                        <li>Kocabay S., Acar E., <strong>Memiş S.</strong>, Taşkın I. İ., Sever M. R., Şener R., 2025. Prediction of Newly Synthesized Heparin Mimic's Effects as Heparanase Inhibitor in Cancer Treatments via Variational Quantum Neural Networks, <em>Computational Biology and Chemistry</em>, 118, 108476.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Ceylan B. O., 2025. Fuzzy Parameterized Fuzzy Soft Matrices-Based Failure Mode and Effects Analysis (FPFS-FMEA) with Ship Lubricating Oil System Risk Assessment, <em>Ocean Engineering</em>, 342, 123049.[cite: 2]</li>
-                        <li>Kocabay S., <strong>Memiş S.</strong>, Taşkın I. İ., Sever M. R., Şener R., 2026. Integrating Experimental Findings and Machine Learning models to Predict the Anticancer Potential of Newly Synthesized Oversulfated Fucoidan, <em>Computational Biology and Chemistry</em>, 123, 109044.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Yıldız R. Ö., 2026. Green Human Resource Management: A Hybrid Soft Decision-Making Approach, <em>Management Decision</em> (Accepted / In Press).[cite: 2]</li>
-                        <li>Binbaşıoğlu D., Şola Erduran F., Aydın T., <strong>Memiş S.</strong>, 2026. Operable Soft Decision-Making Methods in ifpifs-Matrices Space and Their Application to a PVA Problem in Image Denoising, <em>Soft Computing</em> (Accepted / In Press).[cite: 2]</li>
-                    </ol>
-                </div>
-            </div>
-
-            <!-- ESCI / SCOPUS (All 5 Papers) -->
-            <div class="accordion-item">
-                <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-file-lines"></i> Articles Indexed ESCI / SCOPUS</span>
-                    <i class="fa-solid fa-chevron-down acc-icon"></i>
-                </button>
-                <div class="accordion-content">
-                    <ol class="academic-ordered-list">
-                        <li>Enginoğlu S., Erkan U., <strong>Memiş S.</strong>, 2020. Adaptive Cesáro Mean Filter for Salt-and-Pepper Noise Removal, <em>El-Cezerî Journal of Science and Engineering</em>, 7(1), 304-314.[cite: 2]</li>
-                        <li>Naeem K., <strong>Memiş S.</strong>, 2022. Picture Fuzzy Soft &sigma;-Algebra and Picture Fuzzy Soft Measure with Applications, <em>Granular Computing</em>, 8, 397-410.[cite: 2]</li>
-                        <li>Arslan B., Aydın T., <strong>Memiş S.</strong>, Enginoğlu S., 2024. Soft Decision-Making Methods Employing Multiple ifpifs-matrices and Their Applications: A Follow-Up Study, <em>São Paulo Journal of Mathematical Sciences</em>, 43, 1-39.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Naeem K., Azeem S., 2025. Picture Fuzzy Topological Spaces with Picture Fuzzy Prevalence Effect Method for Group Decision-Making, <em>Turkish Journal of Mathematics and Computer Science</em>, 17(1), 212-231.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Fatik S. Y., 2026. Predicting Student Success in Distance Education Utilizing Soft Matrix-Based Machine Learning via Moodle and Student Information Systems Data, <em>Gazi University Journal of Science</em>, 39(2).[cite: 2]</li>
-                    </ol>
-                </div>
-            </div>
-
-            <!-- Other Indexed Journals (TR Dizin & International) -->
-            <div class="accordion-item">
-                <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-list-ol"></i> Articles Indexed Other Indices</span>
-                    <i class="fa-solid fa-chevron-down acc-icon"></i>
-                </button>
-                <div class="accordion-content">
-                    <ol class="academic-ordered-list">
-                        <li>Enginoğlu S., <strong>Memiş S.</strong>, 2018. A Configuration of Some Soft Decision-Making Algorithms via fpfs-matrices, <em>Cumhuriyet Science Journal</em>, 39(4), 871-881.[cite: 2]</li>
-                        <li>Enginoğlu S., <strong>Memiş S.</strong>, 2018. Comment on "Fuzzy Soft Sets", <em>International Journal of Latest Engineering Research and Applications</em>, 3(9), 1-9.[cite: 2]</li>
-                        <li>Enginoğlu S., <strong>Memiş S.</strong>, Öngel T., 2018. Comment on Soft Set Theory and uni-int Decision-Making, <em>Journal of New Results in Science</em>, 7(3), 28-43.[cite: 2]</li>
-                        <li>Enginoğlu S., <strong>Memiş S.</strong>, Arslan B., 2018. Comment (2) on Soft Set Theory and uni-int Decision-Making, <em>Journal of New Theory</em>, 25, 84-102.[cite: 2]</li>
-                        <li>Enginoğlu S., <strong>Memiş S.</strong>, Çağman N., 2019. A Generalization of Fuzzy Soft Max-Min Decision-Making Method and Its Application to a Performance-Based Value Assignment in Image Denoising, <em>El-Cezerî Journal of Science and Engineering</em>, 6(3), 466-481.[cite: 2]</li>
-                        <li>Enginoğlu S., <strong>Memiş S.</strong>, Karaaslan F., 2019. A New Approach to Group Decision-Making Method Based on TOPSIS Under Fuzzy Soft Environment, <em>Journal of New Results in Science</em>, 8(2), 42-52.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Enginoğlu S., Erkan U., 2019. A Data Classification Method in Machine Learning Based on Normalised Hamming Pseudo-Similarity of Fuzzy Parameterized Fuzzy Soft Matrices, <em>Bilge International Journal of Science and Technology Research</em>, 3(Special Issue), 1-8.[cite: 2]</li>
-                        <li>Enginoğlu S., <strong>Memiş S.</strong>, 2020. A New Approach to the Criteria-Weighted Fuzzy Soft Max-Min Decision-Making Method and Its Application to a Performance-Based Value Assignment Problem, <em>Journal of New Results in Science</em>, 9(1), 19-36.[cite: 2]</li>
-                        <li>Enginoğlu S., Aydın T., <strong>Memiş S.</strong>, Arslan B., 2021. Operability-Oriented Configurations of the Soft Decision-Making Methods Proposed between 2013 and 2016 and Their Comparisons, <em>Journal of New Theory</em>, 2021(34), 82-114.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Erkan U., 2021. Different Adaptive Modified Riesz Mean Filter For High-Density Salt-and-Pepper Noise Removal in Grayscale Images, <em>European Journal of Science and Technology</em>, 2021(23), 359-367.[cite: 2]</li>
-                        <li>Enginoğlu S., Aydın T., <strong>Memiş S.</strong>, Arslan B., 2021. SDM Methods' Configurations (2017-2019) and Their Application to a Performance-Based Value Assignment Problem: A Follow up Study, <em>Annals of Optimization Theory and Practice</em>, 4(1), 41-85.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Arslan B., Aydın T., Enginoğlu S., Camcı Ç., 2021. A Classification Method Based on Hamming Pseudo-Similarity of Intuitionistic Fuzzy Parameterized Intuitionistic Fuzzy Soft Matrices, <em>Journal of New Results in Science</em>, 10(2), 59-76.[cite: 2]</li>
-                        <li>Arslan B., Aydın T., <strong>Memiş S.</strong>, Enginoğlu S., 2021. Generalisations of SDM Methods in fpfs-Matrices Space to Render Them Operable in ifpifs-Matrices Space and Their Application to Performance Ranking of Noise-Removal Filters, <em>Journal of New Theory</em>, 2021(36), 88-116.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, 2022. Another View on Picture Fuzzy Soft Sets and Their Product Operations with Decision-Making, <em>Journal of New Theory</em>, 2022(38), 1-13.[cite: 2]</li>
-                        <li>Parmaksız Z. P., Arslan B., <strong>Memiş S.</strong>, Enginoğlu S., 2022. Diagnosing COVID-19, Prioritizing Treatment, and Planning Vaccination Priority via Fuzzy Parameterized Fuzzy Soft Matrices, <em>Journal of New Theory</em>, 2022(39), 54-83.[cite: 2]</li>
-                        <li>Can A., <strong>Memiş S.</strong>, Bulut S., Acar E., Hatipoğlu S., 2023. Mühendislik Eğitiminde Sanal Dershane Üzerine Bir Değerlendirme, <em>Tesisat Mühendisliği Dergisi</em>, 31(194), 7-14.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Şener R., 2024. Classification of NOx Emission in Marine Engines Utilizing kNN-Based Machine Learning Algorithms, <em>International Journal of Pioneering Technology and Engineering</em>, 3(2), 74-79.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Zağra Öz H. Ç., Özden Omuzlu S., Traditional and Modern Architectural Design via the Artificial Intelligence Dall-E for Kıyıköy in Türkiye, <em>Amesia</em>, 6(1), 33-46.[cite: 2]</li>
-                    </ol>
-                </div>
-            </div>
-
-            <!-- Conference Proceedings & Books -->
-            <div class="accordion-item">
-                <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-users"></i> Conference Proceedings, Book Chapters &amp; Presentations</span>
-                    <i class="fa-solid fa-chevron-down acc-icon"></i>
-                </button>
-                <div class="accordion-content">
-                    <h4 class="subgroup-title">Book Chapter</h4>
-                    <ol class="academic-ordered-list">
-                        <li>Enginoğlu S., Erkan U., <strong>Memiş S.</strong>, 2022. Exponential Weighted Mean Filter for Salt-and-Pepper Noise Removal, In: <em>Artificial Intelligence in Data and Big Data Processing (Springer Cham)</em>, LNNS vol 124, pp. 435-446.[cite: 2]</li>
-                    </ol>
-
-                    <h4 class="subgroup-title" style="margin-top: 1rem;">Selected Conference Papers</h4>
-                    <ol class="academic-ordered-list">
-                        <li>Şener R., <strong>Memiş S.</strong>, Kılıç A., 2024. Investigation of Reactivity Controlled Compression Ignition Fueled with Diesel and Natural Gas in Marine Engine using Soft Decision-Making Methods, <em>Global Maritime Congress (GMC)</em>, pp. 125-130, İstanbul.[cite: 2]</li>
-                        <li>Karakoç Ö., <strong>Memiş S.</strong>, 2025. Energy Planning via Picture Fuzzy Prevalence Effect Method, <em>19th International Conference on Applied Sciences</em>, pp. 132-143, Rize.[cite: 2]</li>
-                        <li>Özpınar R., <strong>Memiş S.</strong>, 2025. Parameter Sensitivity Analysis in the Picture Fuzzy Soft k-Nearest Neighbor Algorithm, <em>ASES V. International Bandırma Scientific Studies Congress</em>, pp. 65-84.[cite: 2]</li>
-                        <li>Erkan U., Thanh D. N. H., Enginoğlu S., <strong>Memiş S.</strong>, 2020. Improved Adaptive Weighted Mean Filter for Salt-and-Pepper Noise Removal, <em>ICECCE 2020</em>, pp. 1-5, Istanbul.[cite: 2]</li>
-                        <li><strong>Memiş S.</strong>, Enginoğlu S., Erkan U., 2022. Jaccard Pseudo-Similarity of Fuzzy Parameterized Fuzzy Soft Matrices and Its Application to Diagnosis of Parkinson's Disease, <em>9th Iranian Joint Congress on Fuzzy and Intelligent Systems</em>, pp. 305-309, Bam, Iran.[cite: 2]</li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. Research Projects (Collapsible & Line-by-Line) -->
-        <section id="projects-section">
-            <div class="accordion-item active">
-                <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-diagram-project"></i> Research Projects</span>
+                    <span><i class="fa-solid fa-feather-pointed"></i> Editorial Board Memberships[cite: 1]</span>
                     <i class="fa-solid fa-chevron-down acc-icon"></i>
                 </button>
                 <div class="accordion-content">
                     <div class="line-list">
                         <div class="line-row">
-                            <span class="line-badge r-d">Türk Loydu R&amp;D</span>
-                            <div class="line-content">
-                                <strong>Ulusal Gemi Emisyon Veri Toplama, Doğrulama ve Raporlama Yazılım Platformunun Geliştirilmesi</strong><br>
-                                <em>Role: Researcher &bull; Ongoing</em><br>
-                                Automated MRV/DCS emission monitoring algorithms, data verification, and ship environmental platform development.
-                            </div>
+                            <span class="line-period">01/2025 &ndash; Present</span>
+                            <div class="line-content"><strong>Section Editor</strong> &bull; Journal of Advanced Research in Natural and Applied Sciences[cite: 1]</div>
                         </div>
                         <div class="line-row">
-                            <span class="line-badge tubitak">TÜBİTAK 1002</span>
-                            <div class="line-content">
-                                <strong>Bandırma Körfezi ve Limanı Kapsamında Rota Tabanlı Gemi Emisyonlarının ve Hava Kalitesinin Makine Öğrenmesi ile Modellenmesi</strong><br>
-                                <em>Role: Principal Investigator (Coordinator) &bull; Active</em><br>
-                                Spatio-temporal ship tracking via AIS, emission inventories, and supervised machine learning air quality estimation.
-                            </div>
+                            <span class="line-period">01/2024 &ndash; 12/2024</span>
+                            <div class="line-content"><strong>Editor</strong> &bull; Journal of Advanced Research in Natural and Applied Sciences[cite: 1]</div>
                         </div>
                         <div class="line-row">
-                            <span class="line-badge tubitak">TÜBİTAK 1005</span>
-                            <div class="line-content">
-                                <strong>Akciğer Seslerinin Spektral Analizi ve Makine Öğrenmesi Yöntemleriyle Solunum Yolu Hastalıklarının Teşhisine Yönelik Mobil ve Web Tabanlı Karar Destek Sistemi</strong><br>
-                                <em>Role: Researcher &bull; Grant No: 123E473</em><br>
-                                Signal processing, acoustic feature extraction, and ML diagnostics for pulmonary diseases.
-                            </div>
+                            <span class="line-period">11/2023 &ndash; 12/2024</span>
+                            <div class="line-content"><strong>Editor</strong> &bull; Journal of Amasya University the Institute of Sciences and Technology[cite: 1]</div>
                         </div>
                         <div class="line-row">
-                            <span class="line-badge bap">BAP Project</span>
-                            <div class="line-content">
-                                <strong>Gemi Yağlama Yağı Sistemi Hata Türü ve Etkileri Analizine Dayalı Risk Değerlendirmesinde Esnek Karar Verme Yöntemlerinin Geliştirilmesi</strong><br>
-                                <em>Role: Principal Investigator (Coordinator) &bull; Project ID: BAP-24-1004-009</em><br>
-                                FPFS-matrices driven FMEA model formulating risk priority rankings in ship machinery.
-                            </div>
+                            <span class="line-period">01/2023 &ndash; 12/2023</span>
+                            <div class="line-content"><strong>Section Editor</strong> &bull; Journal of New Theory[cite: 1]</div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">01/2022 &ndash; 12/2022</span>
+                            <div class="line-content"><strong>Production Editor</strong> &bull; Journal of New Theory[cite: 1]</div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">01/2021 &ndash; 12/2021</span>
+                            <div class="line-content"><strong>Production Editor</strong> &bull; Journal of New Results in Science[cite: 1]</div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">11/2019 &ndash; 12/2021</span>
+                            <div class="line-content"><strong>Layout Editor</strong> &bull; Journal of New Results in Science[cite: 1]</div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- SCI / SCI-E Reviews (All 41 from PDF) -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span><i class="fa-solid fa-magnifying-glass"></i> Reviews Indexed SCI / SCI-E (41 Journals)[cite: 1]</span>
+                    <i class="fa-solid fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <ol class="academic-ordered-list">
+                        <li>IEEE Transactions on Fuzzy Systems (2025, 2026)[cite: 1]</li>
+                        <li>IEEE Transactions on Systems, Man, and Cybernetics: Systems (2026)[cite: 1]</li>
+                        <li>IEEE Transactions on Multimedia (2026)[cite: 1]</li>
+                        <li>IEEE Access (2021, 2023-2024)[cite: 1]</li>
+                        <li>Neural Computing with Applications (2024-2025)[cite: 1]</li>
+                        <li>Multimedia Tools and Applications (2025-2026)[cite: 1]</li>
+                        <li>Soft Computing (2021-2022)[cite: 1]</li>
+                        <li>Applied Intelligence (2024-2025)[cite: 1]</li>
+                        <li>International Journal of Fuzzy Systems (2020, 2024-2026)[cite: 1]</li>
+                        <li>Journal of Intelligent &amp; Fuzzy Systems (2019-2023)[cite: 1]</li>
+                        <li>Complex &amp; Intelligent Systems (2021, 2023-2024)[cite: 1]</li>
+                        <li>Ocean Engineering (2025-2026)</li>
+                        <li>Ships and Offshore Structures (2025-2026)[cite: 1]</li>
+                        <li>Scientific Reports (2023, 2025)[cite: 1]</li>
+                        <li>Management Decision (2022, 2025)[cite: 1]</li>
+                        <li>PeerJ Computer Science (2024)[cite: 1]</li>
+                        <li>Big Data Research (2024)[cite: 1]</li>
+                        <li>Advances in Engineering Software (2022)[cite: 1]</li>
+                        <li>Journal of Ambient Intelligence and Humanized Computing (2020-2023)[cite: 1]</li>
+                        <li>International Journal of Intelligent Systems (2020-2022)[cite: 1]</li>
+                        <li>Turkish Journal of Electrical Engineering &amp; Computer Science (2021, 2022)[cite: 1]</li>
+                        <li>Turkish Journal of Mathematics (2021)[cite: 1]</li>
+                        <li>Mathematical Problems in Engineering (2021)[cite: 1]</li>
+                        <li>Mathematics (2021)[cite: 1]</li>
+                        <li>The Imaging Science Journal (2022)[cite: 1]</li>
+                        <li>Signal, Image and Video Processing (2022)[cite: 1]</li>
+                        <li>Symmetry (2022)[cite: 1]</li>
+                        <li>International Journal of Biomathematics (2022)[cite: 1]</li>
+                        <li>Applied Sciences (2022-2023)[cite: 1]</li>
+                        <li>Sustainability (2022-2023)[cite: 1]</li>
+                        <li>Energies (2023)[cite: 1]</li>
+                        <li>Bioengineering (2023)[cite: 1]</li>
+                        <li>Electronics (2023)[cite: 1]</li>
+                        <li>Processes (2023)[cite: 1]</li>
+                        <li>Sensors (2023)[cite: 1]</li>
+                        <li>Buildings (2023)[cite: 1]</li>
+                        <li>Plos One (2024)[cite: 1]</li>
+                        <li>Journal of Circuits, Systems and Computers (2025)[cite: 1]</li>
+                        <li>Journal of the Faculty of Engineering and Architecture of Gazi University (2025)[cite: 1]</li>
+                        <li>International Journal of Modern Physics C (2025)[cite: 1]</li>
+                        <li>Operational Research (2025)[cite: 1]</li>
+                        <li>IETE Journal of Research (2026)[cite: 1]</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- ESCI / Others Reviews (13 Journals from PDF) -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span><i class="fa-solid fa-list-ol"></i> Reviews Indexed ESCI &amp; Other Indices (13 Journals)[cite: 1]</span>
+                    <i class="fa-solid fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <ol class="academic-ordered-list">
+                        <li>IEEE Transactions on Artificial Intelligence (2025)[cite: 1]</li>
+                        <li>Discover Artificial Intelligence (2025)[cite: 1]</li>
+                        <li>Big Data and Cognitive Computing (2023)[cite: 1]</li>
+                        <li>Journal of ETA Maritime Science (2026)[cite: 1]</li>
+                        <li>Pamukkale University Journal of Engineering Sciences (2021)[cite: 1]</li>
+                        <li>Journal of Control, Automation and Electrical Systems (2024-2025)[cite: 1]</li>
+                        <li>Automatika (2025)[cite: 1]</li>
+                        <li>Sigma Journal of Engineering and Natural Sciences (2025)[cite: 1]</li>
+                        <li>Information (2022)[cite: 1]</li>
+                        <li>TWMS Journal of Applied and Engineering Mathematics (2022)[cite: 1]</li>
+                        <li>Indonesian Journal of Electrical Engineering and Informatics (2022)[cite: 1]</li>
+                        <li>TELKOMNIKA (2022)[cite: 1]</li>
+                        <li>International Journal of Sensors, Wireless Communications and Control (2022)[cite: 1]</li>
+                        <li>Journal of Quantum Technologies and Informatics Research (2024, 2025)[cite: 1]</li>
+                        <li>Journal of New Theory (2020-2021)[cite: 1]</li>
+                    </ol>
+                </div>
+            </div>
         </section>
 
-        <!-- 6. Software Platforms & Toolboxes (Collapsible & Line-by-Line) -->
-        <section id="software-section">
+        <!-- 5. Software Platforms & Toolboxes -->
+        <section id="software-section" class="scroll-target">
             <div class="accordion-item active">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
-                    <span><i class="fa-solid fa-code"></i> Software Platforms</span>
+                    <span><i class="fa-solid fa-code-branch"></i> Software Platforms &amp; Algorithmic Toolboxes</span>
                     <i class="fa-solid fa-chevron-down acc-icon"></i>
                 </button>
                 <div class="accordion-content">
@@ -594,9 +748,94 @@
             </div>
         </section>
 
-        <!-- 7. Awards & Honors (Collapsible) -->
-        <section id="awards-section">
+        <!-- 6. Experience & Awards -->
+        <section id="experience-section" class="scroll-target">
+            <!-- Appointments -->
             <div class="accordion-item active">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span><i class="fa-solid fa-briefcase"></i> Academic &amp; Administrative Appointments</span>
+                    <i class="fa-solid fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="line-list">
+                        <div class="line-row">
+                            <span class="line-period">09/2024 &ndash; Present</span>
+                            <div class="line-content">
+                                <strong>Head of Department</strong> &bull; Department of Marine Engineering, Maritime Faculty, Bandırma Onyedi Eylül University
+                            </div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">03/2026 &ndash; Present</span>
+                            <div class="line-content">
+                                <strong>Quality Coordinator &amp; STCW Course Coordinator</strong> &bull; Maritime Faculty, Bandırma Onyedi Eylül University
+                            </div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">06/2024 &ndash; Present</span>
+                            <div class="line-content">
+                                <strong>Faculty Board &amp; Executive Board Member</strong> &bull; Maritime Faculty, Bandırma Onyedi Eylül University
+                            </div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">01/2024 &ndash; 09/2024</span>
+                            <div class="line-content">
+                                <strong>Co-Head of Department</strong> &bull; Department of Marine Engineering, Bandırma Onyedi Eylül University
+                            </div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">09/2021 &ndash; 06/2023</span>
+                            <div class="line-content">
+                                <strong>Vice Dean</strong> &bull; Faculty of Engineering and Natural Sciences, İstanbul Rumeli University
+                            </div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">12/2021 &ndash; 06/2023</span>
+                            <div class="line-content">
+                                <strong>Head of Department</strong> &bull; Department of Computer Engineering, İstanbul Rumeli University
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span><i class="fa-solid fa-graduation-cap"></i> Education &amp; Qualifications</span>
+                    <i class="fa-solid fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="line-list">
+                        <div class="line-row">
+                            <span class="line-period">2024</span>
+                            <div class="line-content">
+                                <strong>Associate Professorship</strong> &bull; Computer Science and Engineering (Turkish Interuniversity Board - ÜAK)
+                            </div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">2016 &ndash; 2021</span>
+                            <div class="line-content">
+                                <strong>PhD in Applied Mathematics</strong> &bull; Çanakkale Onsekiz Mart University (Graduated 1st in Institute &bull; TÜBİTAK 2211-C Fellow)
+                            </div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">2014 &ndash; 2016</span>
+                            <div class="line-content">
+                                <strong>MSc in Mathematics</strong> &bull; Çanakkale Onsekiz Mart University
+                            </div>
+                        </div>
+                        <div class="line-row">
+                            <span class="line-period">2010 &ndash; 2014</span>
+                            <div class="line-content">
+                                <strong>BSc in Mathematics</strong> &bull; Çanakkale Onsekiz Mart University
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards -->
+            <div class="accordion-item">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span><i class="fa-solid fa-trophy"></i> Awards &amp; Honors</span>
                     <i class="fa-solid fa-chevron-down acc-icon"></i>
@@ -626,8 +865,8 @@
             </div>
         </section>
 
-        <!-- 8. Contact Section (Direct Interactive Email Cards) -->
-        <section id="contact-section" class="glass-card">
+        <!-- 7. Contact Section -->
+        <section id="contact-section" class="glass-card scroll-target">
             <div class="section-header" style="justify-content: center;">
                 <h2 class="section-title"><i class="fa-solid fa-paper-plane"></i> Contact &amp; Academic Collaboration</h2>
             </div>
@@ -659,11 +898,146 @@
         <p>&copy; 2026 Dr. Samet MEMİŞ. Deployed securely on <a href="https://sametmemis.com">sametmemis.com</a> via GitHub Pages.</p>
     </footer>
 
-    <!-- Interactive Multidisciplinary Network Script -->
-    <script src="network.js?v=3"></script>
-
-    <!-- Global Accordion Toggle -->
+    <!-- Direct Embedded High-Performance Interactive Mesh Script (Zero-Cache Issue) -->
     <script>
+        const canvas = document.getElementById('quantum-circuit-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        const mouse = {
+            x: -2000,
+            y: -2000,
+            radius: 200
+        };
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        }, { passive: true });
+
+        window.addEventListener('mouseleave', () => {
+            mouse.x = -2000;
+            mouse.y = -2000;
+        });
+
+        // Multidisciplinary Nodes: Gold PCB pins, Violet Qubits, Deep Cyan Neural Synapses
+        const nodes = [];
+        const numNodes = Math.min(Math.floor(window.innerWidth / 18), 70);
+
+        class MultidisciplinaryNode {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.vx = (Math.random() - 0.5) * 0.7;
+                this.vy = (Math.random() - 0.5) * 0.7;
+                this.type = Math.random() > 0.65 ? 'qubit' : (Math.random() > 0.35 ? 'pcb' : 'neural');
+                this.radius = this.type === 'qubit' ? 3.5 : (this.type === 'pcb' ? 2.8 : 2.2);
+                this.phase = Math.random() * Math.PI * 2;
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                this.phase += 0.04;
+
+                if (this.x < 0 || this.x > width) this.vx *= -1;
+                if (this.y < 0 || this.y > height) this.vy *= -1;
+
+                // Mouse gravity tension
+                const dx = mouse.x - this.x;
+                const dy = mouse.y - this.y;
+                const dist = Math.hypot(dx, dy);
+
+                if (dist < mouse.radius && dist > 0) {
+                    const force = (mouse.radius - dist) / mouse.radius;
+                    this.x += (dx / dist) * force * 2.2;
+                    this.y += (dy / dist) * force * 2.2;
+                }
+            }
+
+            draw() {
+                ctx.beginPath();
+                if (this.type === 'qubit') {
+                    const pulse = this.radius + Math.sin(this.phase) * 1.3;
+                    ctx.arc(this.x, this.y, pulse, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(124, 58, 237, 0.75)'; // Violet
+                } else if (this.type === 'pcb') {
+                    ctx.rect(this.x - 2.8, this.y - 2.8, 5.6, 5.6);
+                    ctx.fillStyle = 'rgba(217, 119, 6, 0.8)'; // Gold PCB pin
+                } else {
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = 'rgba(2, 132, 199, 0.7)'; // Cyan Synapse
+                }
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < numNodes; i++) {
+            nodes.push(new MultidisciplinaryNode());
+        }
+
+        function render() {
+            ctx.clearRect(0, 0, width, height);
+
+            const len = nodes.length;
+            for (let i = 0; i < len; i++) {
+                const n1 = nodes[i];
+                n1.update();
+                n1.draw();
+
+                for (let j = i + 1; j < len; j++) {
+                    const n2 = nodes[j];
+                    const dx = n1.x - n2.x;
+                    const dy = n1.y - n2.y;
+                    const dist = Math.hypot(dx, dy);
+
+                    if (dist < 140) {
+                        ctx.beginPath();
+                        // Orthogonal PCB trace if either node is PCB
+                        if (n1.type === 'pcb' || n2.type === 'pcb') {
+                            ctx.moveTo(n1.x, n1.y);
+                            ctx.lineTo(n2.x, n1.y);
+                            ctx.lineTo(n2.x, n2.y);
+                            ctx.strokeStyle = `rgba(2, 132, 199, ${(1 - dist / 140) * 0.25})`;
+                            ctx.lineWidth = 1.0;
+                        } else {
+                            ctx.moveTo(n1.x, n1.y);
+                            ctx.lineTo(n2.x, n2.y);
+                            const strokeColor = (n1.type === 'qubit' || n2.type === 'qubit') 
+                                ? `rgba(124, 58, 237, ${(1 - dist / 140) * 0.26})` 
+                                : `rgba(13, 148, 136, ${(1 - dist / 140) * 0.2})`;
+                            ctx.strokeStyle = strokeColor;
+                            ctx.lineWidth = 0.85;
+                        }
+                        ctx.stroke();
+                    }
+                }
+
+                // Laser connection towards mouse cursor
+                const mDist = Math.hypot(mouse.x - n1.x, mouse.y - n1.y);
+                if (mDist < mouse.radius) {
+                    ctx.beginPath();
+                    ctx.moveTo(n1.x, n1.y);
+                    ctx.lineTo(mouse.x, mouse.y);
+                    ctx.strokeStyle = `rgba(2, 132, 199, ${(1 - mDist / mouse.radius) * 0.42})`;
+                    ctx.lineWidth = 1.2;
+                    ctx.stroke();
+                }
+            }
+
+            requestAnimationFrame(render);
+        }
+
+        render();
+
+        window.addEventListener('resize', () => {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        });
+
+        // Global Accordion Controller
         function toggleAccordion(btn) {
             const item = btn.parentElement;
             const content = btn.nextElementSibling;
@@ -675,7 +1049,6 @@
             }
         }
 
-        // Initialize open accordions on page load
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.accordion-item.active .accordion-content').forEach(el => {
                 el.style.maxHeight = el.scrollHeight + "px";
