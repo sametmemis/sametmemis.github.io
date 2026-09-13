@@ -4,135 +4,298 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assoc. Prof. Dr. Samet Memiş | Academic Homepage & Lab</title>
-    <meta name="description" content="Official academic homepage of Assoc. Prof. Dr. Samet Memiş. Research in Soft Decision-Making, Fuzzy Parameterized Soft Matrices, Machine Learning, and Maritime AI.">
+    <meta name="description" content="Academic homepage of Assoc. Prof. Dr. Samet Memiş. Multidisciplinary research in Soft Decision-Making, Fuzzy Sets & Matrices, Machine Learning, Quantum Computing, and Maritime AI.">
     
-    <!-- Fonts & Icons -->
+    <!-- Google Fonts & FontAwesome CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <!-- Custom Style -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Canvas & Ambient Glows -->
-    <canvas id="interactive-canvas"></canvas>
-    <div class="glow-sphere glow-1"></div>
-    <div class="glow-sphere glow-2"></div>
+    <!-- Interactive Quantum & Circuit Mesh Background -->
+    <canvas id="quantum-circuit-canvas"></canvas>
+    <div class="glow-orb glow-cyan"></div>
+    <div class="glow-orb glow-indigo"></div>
 
+    <!-- Navigation -->
     <header>
         <div class="nav-container">
             <a href="#" class="nav-brand">
-                <i class="fa-solid fa-microchip"></i>
+                <i class="fa-solid fa-atom quantum-spin"></i>
                 <span>Samet Memiş</span>, Ph.D.
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#editorial">Editorial & Leadership</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#editorial">Editorial</a></li>
+                <li><a href="#cost">COST Actions</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
 
     <div class="main-content">
-        <!-- Hero Section -->
+        <!-- Hero Profile Section -->
         <section id="about" class="glass-card hero-section">
             <div class="avatar-wrap">
-                <img src="https://avatars.githubusercontent.com/u/100412854?v=4" alt="Assoc. Prof. Dr. Samet Memiş" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Samet+Memis&background=1a365d&color=fff&size=256'">
+                <img src="SM_Photo.jpeg" alt="Assoc. Prof. Dr. Samet Memiş" class="avatar-img" onerror="this.src='https://avatars.githubusercontent.com/u/100412854?v=4'">
+                <div class="status-indicator" title="Active in Research & Academic Service"></div>
             </div>
+
             <div class="hero-details">
+                <div class="role-badge-tag"><i class="fa-solid fa-graduation-cap"></i> Assoc. Prof. of Computer Science and Engineering</div>
                 <h1>Dr. Samet Memiş</h1>
-                <div class="hero-title-role">Associate Professor of Computer Science & Engineering</div>
+                
                 <div class="hero-affiliation">
-                    <strong>Head of Marine Engineering Department</strong> &bull; Maritime Faculty<br>
+                    <strong>Head of Department of Marine Engineering</strong> &bull; Maritime Faculty<br>
                     Quality Coordinator &bull; STCW Course Coordinator<br>
-                    Bandırma Onyedi Eylül University, Türkiye
+                    <span>Bandırma Onyedi Eylül University, Balıkesir, Türkiye</span>
                 </div>
+
+                <!-- Focused Research Badges -->
                 <div class="badge-bar">
-                    <span class="tech-pill"><i class="fa-solid fa-cubes"></i> Soft Decision-Making</span>
-                    <span class="tech-pill"><i class="fa-solid fa-wave-square"></i> Fuzzy Soft Matrices</span>
-                    <span class="tech-pill"><i class="fa-solid fa-brain"></i> Supervised Machine Learning</span>
-                    <span class="tech-pill"><i class="fa-solid fa-image"></i> Image Denoising</span>
-                    <span class="tech-pill"><i class="fa-solid fa-ship"></i> Maritime Decarbonization & AI</span>
+                    <span class="tech-pill"><i class="fa-solid fa-wave-square"></i> Fuzzy Sets &amp; Logic</span>
+                    <span class="tech-pill"><i class="fa-solid fa-table-cells"></i> Soft Sets &amp; Matrices</span>
+                    <span class="tech-pill"><i class="fa-solid fa-layer-group"></i> Soft Decision Making</span>
+                    <span class="tech-pill"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+                    <span class="tech-pill"><i class="fa-solid fa-robot"></i> Artificial Intelligence</span>
+                    <span class="tech-pill"><i class="fa-solid fa-image"></i> Image Processing</span>
                     <span class="tech-pill"><i class="fa-solid fa-atom"></i> Quantum Computing</span>
+                    <span class="tech-pill"><i class="fa-solid fa-shield-halved"></i> Risk Assessment in Maritime</span>
+                    <span class="tech-pill"><i class="fa-solid fa-ship"></i> Maritime Decarbonization</span>
                 </div>
-                <div class="quick-links">
-                    <a href="https://scholar.google.com.tr/citations?user=8TW7mSYAAAAJ&hl=en" target="_blank" rel="noopener" class="btn-link">
-                        <i class="fa-brands fa-google-scholar"></i> Google Scholar
+
+                <!-- Academic & Professional Identity Profiles -->
+                <div class="profiles-grid">
+                    <a href="https://scholar.google.com.tr/citations?user=8TW7mSYAAAAJ&hl=tr" target="_blank" rel="noopener" class="profile-btn scholar">
+                        <i class="fa-brands fa-google-scholar"></i>
+                        <span>Google Scholar</span>
                     </a>
-                    <a href="https://orcid.org/0000-0002-0958-5872" target="_blank" rel="noopener" class="btn-link">
-                        <i class="fa-brands fa-orcid"></i> ORCID
+                    <a href="https://www.webofscience.com/wos/author/record/625974" target="_blank" rel="noopener" class="profile-btn wos">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Web of Science</span>
                     </a>
-                    <a href="https://github.com/sametmemis" target="_blank" rel="noopener" class="btn-link">
-                        <i class="fa-brands fa-github"></i> GitHub
+                    <a href="https://www.scopus.com/authid/detail.uri?authorId=57211003875" target="_blank" rel="noopener" class="profile-btn scopus">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Scopus</span>
                     </a>
-                    <a href="mailto:smemis@bandirma.edu.tr" class="btn-link">
-                        <i class="fa-solid fa-envelope"></i> smemis@bandirma.edu.tr
+                    <a href="https://www.researchgate.net/profile/Samet-Memis-2" target="_blank" rel="noopener" class="profile-btn researchgate">
+                        <i class="fa-brands fa-researchgate"></i>
+                        <span>ResearchGate</span>
+                    </a>
+                    <a href="https://search.trdizin.gov.tr/tr/yazar/detay/778515/samet-memis" target="_blank" rel="noopener" class="profile-btn trdizin">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>TR Dizin</span>
+                    </a>
+                    <a href="https://github.com/sametmemis" target="_blank" rel="noopener" class="profile-btn github">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.mathworks.com/matlabcentral/profile/authors/11337739" target="_blank" rel="noopener" class="profile-btn mathworks">
+                        <i class="fa-solid fa-code"></i>
+                        <span>MathWorks</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sametmemis/" target="_blank" rel="noopener" class="profile-btn linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Metric Numbers Showcase -->
+        <!-- Dynamic Impact Statistics -->
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="metric-num">20+</div>
-                <div class="metric-label">SCI / SCI-E Articles</div>
+                <div class="metric-label">SCI / SCI-E Indexed Articles</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-num">8</div>
+                <div class="metric-label">European COST Actions</div>
             </div>
             <div class="metric-card">
                 <div class="metric-num">18+</div>
-                <div class="metric-label">R&amp;D &amp; BAP Projects</div>
+                <div class="metric-label">TÜBİTAK, Türk Loydu &amp; BAP Projects</div>
             </div>
             <div class="metric-card">
                 <div class="metric-num">40+</div>
-                <div class="metric-label">Q1/Q2 Journal Refereed</div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-num">7</div>
-                <div class="metric-label">COST Actions Joined</div>
+                <div class="metric-label">International SCI-E Reviewer Roles</div>
             </div>
         </div>
 
-        <!-- Editorial & Administrative Leadership -->
+        <!-- 2 Column: Education & Academic Administrative Appointments -->
+        <div class="grid-split">
+            <!-- Academic Degrees Only -->
+            <section id="education" class="glass-card">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education &amp; Qualifications</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-node">
+                        <div class="timeline-role">Associate Professorship &bull; Computer Science and Engineering</div>
+                        <div class="timeline-inst">Turkish Interuniversity Board (ÜAK)</div>
+                        <div class="timeline-period">2024</div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-role">Ph.D. in Applied Mathematics</div>
+                        <div class="timeline-inst">Çanakkale Onsekiz Mart University</div>
+                        <div class="timeline-period">2016 &ndash; 2021 &bull; High Honor &amp; First Place (TÜBİTAK 2211-C Fellow)</div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-role">M.Sc. in Mathematics</div>
+                        <div class="timeline-inst">Çanakkale Onsekiz Mart University</div>
+                        <div class="timeline-period">2014 &ndash; 2016</div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-role">B.Sc. in Mathematics</div>
+                        <div class="timeline-inst">Çanakkale Onsekiz Mart University</div>
+                        <div class="timeline-period">2010 &ndash; 2014</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academic Administrative & Departmental Appointments -->
+            <section id="appointments" class="glass-card">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Academic &amp; Administrative Roles</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-node">
+                        <div class="timeline-role">Head of Department &bull; Marine Engineering</div>
+                        <div class="timeline-inst">Faculty of Maritime, Bandırma Onyedi Eylül University</div>
+                        <div class="timeline-period">09/2024 &ndash; Present (Co-Head: 01/2024 &ndash; 09/2024)</div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-role">Quality Coordinator &amp; STCW Course Coordinator</div>
+                        <div class="timeline-inst">Faculty of Maritime, Bandırma Onyedi Eylül University</div>
+                        <div class="timeline-period">03/2026 &ndash; Present</div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-role">Faculty Executive Board &amp; Faculty Board Member</div>
+                        <div class="timeline-inst">Faculty of Maritime, Bandırma Onyedi Eylül University</div>
+                        <div class="timeline-period">06/2024 &ndash; Present</div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-role">Vice Dean &bull; Faculty of Engineering and Natural Sciences</div>
+                        <div class="timeline-inst">İstanbul Rumeli University</div>
+                        <div class="timeline-period">09/2021 &ndash; 06/2023</div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-role">Head of Department &bull; Computer Engineering</div>
+                        <div class="timeline-inst">İstanbul Rumeli University</div>
+                        <div class="timeline-period">12/2021 &ndash; 06/2023</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Editorial Boards Section -->
         <section id="editorial" class="glass-card">
             <div class="section-header">
-                <h2 class="section-title"><i class="fa-solid fa-award"></i> Editorial Boards & Leadership</h2>
+                <h2 class="section-title"><i class="fa-solid fa-feather-pointed"></i> Editorial Board Memberships</h2>
             </div>
             <div class="roles-grid">
                 <div class="role-box">
-                    <span class="role-badge">Editorial Board</span>
+                    <span class="role-badge">Section Editor</span>
                     <div class="role-journal">Journal of Advanced Research in Natural and Applied Sciences</div>
-                    <div class="role-time">Section Editor &bull; 01/2025 &ndash; Present (Editor: 2024)</div>
+                    <div class="role-time">01/2025 &ndash; Present (Editor: 2024)</div>
                 </div>
                 <div class="role-box">
-                    <span class="role-badge">Editorial Board</span>
-                    <div class="role-journal">Journal of New Theory &amp; New Results in Science</div>
-                    <div class="role-time">Section Editor &amp; Publication Editor &bull; 2019 &ndash; 2024</div>
+                    <span class="role-badge">Section Editor</span>
+                    <div class="role-journal">Journal of New Theory</div>
+                    <div class="role-time">01/2023 &ndash; 12/2024 (Publication Editor: 2022)</div>
                 </div>
                 <div class="role-box">
-                    <span class="role-badge">European Framework</span>
-                    <div class="role-journal">COST Actions (CA23159, CA22151, CA23155, CA23115)</div>
-                    <div class="role-time">Decarbonisation of Transportation, Digital Twins, Quantum Info</div>
+                    <span class="role-badge">Editor</span>
+                    <div class="role-journal">Journal of Amasya University the Institute of Sciences and Technology</div>
+                    <div class="role-time">11/2023 &ndash; 12/2024</div>
                 </div>
                 <div class="role-box">
-                    <span class="role-badge">Academic Leadership</span>
-                    <div class="role-journal">Department Head &amp; Quality Coordinator</div>
-                    <div class="role-time">Faculty of Maritime, Bandırma Onyedi Eylül University</div>
+                    <span class="role-badge">Publication &amp; Layout Editor</span>
+                    <div class="role-journal">Journal of New Results in Science</div>
+                    <div class="role-time">11/2019 &ndash; 12/2021</div>
                 </div>
             </div>
         </section>
 
-        <!-- Selected SCI / SCI-E Publications -->
+        <!-- Dedicated COST Actions Section -->
+        <section id="cost" class="glass-card">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fa-solid fa-earth-europe"></i> European COST Actions (8 Active Memberships)</h2>
+            </div>
+            <div class="cost-grid">
+                <div class="cost-item">
+                    <div class="cost-code">CA23159</div>
+                    <div class="cost-info">
+                        <div class="cost-title">Decarbonising Waterborne Transportation</div>
+                        <div class="cost-desc">Alternative marine power plants, zero-emission routing &amp; regulatory frameworks.</div>
+                    </div>
+                </div>
+                <div class="cost-item">
+                    <div class="cost-code">CA23115</div>
+                    <div class="cost-info">
+                        <div class="cost-title">Relativistic Quantum Information</div>
+                        <div class="cost-desc">Quantum foundations, computational quantum states &amp; relativistic communication.</div>
+                    </div>
+                </div>
+                <div class="cost-item">
+                    <div class="cost-code">CA22151</div>
+                    <div class="cost-info">
+                        <div class="cost-title">Cyber-Physical Systems &amp; Digital Twins for Decarbonisation</div>
+                        <div class="cost-desc">AI-assisted modeling for energy-intensive manufacturing and maritime sectors.</div>
+                    </div>
+                </div>
+                <div class="cost-item">
+                    <div class="cost-code">CA23155</div>
+                    <div class="cost-info">
+                        <div class="cost-title">A Pan-European Network of Ocean Tribology</div>
+                        <div class="cost-desc">Marine lubrication degradation, wear prevention &amp; marine system reliability analysis.</div>
+                    </div>
+                </div>
+                <div class="cost-item">
+                    <div class="cost-code">CA21160</div>
+                    <div class="cost-info">
+                        <div class="cost-title">Non-Globular Proteins in the Era of Machine Learning</div>
+                        <div class="cost-desc">Machine learning classifications of molecular sequences and conformational dynamics.</div>
+                    </div>
+                </div>
+                <div class="cost-item">
+                    <div class="cost-code">CA23138</div>
+                    <div class="cost-info">
+                        <div class="cost-title">Port City Territories in Action</div>
+                        <div class="cost-desc">A collaborative laboratory for inclusive energy transition and port-city sustainability.</div>
+                    </div>
+                </div>
+                <div class="cost-item">
+                    <div class="cost-code">CA23141</div>
+                    <div class="cost-info">
+                        <div class="cost-title">Managing Artificial Intelligence in Archaeology</div>
+                        <div class="cost-desc">Pattern classification, image restoration &amp; spatial predictive analytics.</div>
+                    </div>
+                </div>
+                <div class="cost-item">
+                    <div class="cost-code">CA22143</div>
+                    <div class="cost-info">
+                        <div class="cost-title">European Network for Research &amp; Innovation in Decarbonisation</div>
+                        <div class="cost-desc">Cross-sector digital and computational strategies for accelerated climate action.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected SCI/SCI-E Publications -->
         <section id="publications" class="glass-card">
             <div class="section-header">
-                <h2 class="section-title"><i class="fa-solid fa-book-open"></i> Selected SCI / SCI-Expanded Publications</h2>
-                <a href="https://scholar.google.com.tr/citations?user=8TW7mSYAAAAJ" target="_blank" rel="noopener" class="btn-link" style="font-size:0.8rem; padding: 0.4rem 0.8rem;">
-                    Full List on Scholar <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <h2 class="section-title"><i class="fa-solid fa-file-lines"></i> Selected Journal Publications (SCI / SCI-Expanded)</h2>
+                <a href="https://scholar.google.com.tr/citations?user=8TW7mSYAAAAJ&hl=tr" target="_blank" rel="noopener" class="profile-btn scholar" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">
+                    Full Scholar Record <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
             </div>
             
@@ -208,82 +371,55 @@
             </div>
         </section>
 
-        <!-- Two Columns: Projects & Experience -->
-        <div class="grid-split">
-            <section id="projects" class="glass-card">
-                <div class="section-header">
-                    <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> Selected Projects</h2>
+        <!-- Selected Projects Section -->
+        <section id="projects" class="glass-card">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fa-solid fa-microchip"></i> Key Funded Projects &amp; Software Platforms</h2>
+            </div>
+            <div class="roles-grid">
+                <div class="role-box">
+                    <span class="role-badge">Türk Loydu R&amp;D Project</span>
+                    <div class="role-journal">Ulusal Gemi Emisyon Veri Toplama, Doğrulama ve Raporlama Platformu</div>
+                    <div class="role-time">Researcher &bull; Ongoing</div>
                 </div>
-                <div class="timeline">
-                    <div class="timeline-node">
-                        <div class="timeline-role">Ulusal Gemi Emisyon Veri Platformu</div>
-                        <div class="timeline-inst">Türk Loydu R&amp;D Project &bull; Researcher</div>
-                        <div class="timeline-period">Ongoing &bull; Ship Emission Verification &amp; AI Platform</div>
-                    </div>
-                    <div class="timeline-node">
-                        <div class="timeline-role">Air Quality &amp; Emission in Bandırma Bay via ML</div>
-                        <div class="timeline-inst">TÜBİTAK 1002 &bull; Principal Investigator (Coordinator)</div>
-                        <div class="timeline-period">Bandırma Port &amp; AIS-Integrated Modelling</div>
-                    </div>
-                    <div class="timeline-node">
-                        <div class="timeline-role">FMEA Methods Based on Soft Decision-Making</div>
-                        <div class="timeline-inst">BAP-24-1004-009 &bull; Principal Investigator</div>
-                        <div class="timeline-period">Completed &bull; Maritime Risk Analysis</div>
-                    </div>
-                    <div class="timeline-node">
-                        <div class="timeline-role">Lung Sound Analysis &amp; ML Diagnostics</div>
-                        <div class="timeline-inst">TÜBİTAK 1005 Project (123E473) &bull; Researcher</div>
-                        <div class="timeline-period">Running &bull; Mobile &amp; Web COPD/Asthma Diagnostic</div>
-                    </div>
+                <div class="role-box">
+                    <span class="role-badge">TÜBİTAK 1002 Project</span>
+                    <div class="role-journal">Route-Based Air Quality Monitoring &amp; Ship-Related Emission Estimation via ML</div>
+                    <div class="role-time">Coordinator / Principal Investigator</div>
                 </div>
-            </section>
-
-            <section id="experience" class="glass-card">
-                <div class="section-header">
-                    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Appointments &amp; Degrees</h2>
+                <div class="role-box">
+                    <span class="role-badge">TÜBİTAK 1005 Project</span>
+                    <div class="role-journal">Spectral Analysis of Lung Sounds &amp; ML Diagnostics for Pulmonary Diseases</div>
+                    <div class="role-time">Researcher &bull; Running (Grant: 123E473)</div>
                 </div>
-                <div class="timeline">
-                    <div class="timeline-node">
-                        <div class="timeline-role">Associate Professor &bull; Computer Science &amp; Eng.</div>
-                        <div class="timeline-inst">Bandırma Onyedi Eylül University (Marine Engineering)</div>
-                        <div class="timeline-period">04/2024 &ndash; Present (ÜAK Associate Prof. 2024)</div>
-                    </div>
-                    <div class="timeline-node">
-                        <div class="timeline-role">Vice Dean &amp; Head of Computer Engineering</div>
-                        <div class="timeline-inst">İstanbul Rumeli University</div>
-                        <div class="timeline-period">2021 &ndash; 2023</div>
-                    </div>
-                    <div class="timeline-node">
-                        <div class="timeline-role">Ph.D. in Applied Mathematics</div>
-                        <div class="timeline-inst">Çanakkale Onsekiz Mart University (TÜBİTAK 2211-C Fellow)</div>
-                        <div class="timeline-period">2016 &ndash; 2021 &bull; Institute &amp; Program 1st Place</div>
-                    </div>
-                    <div class="timeline-node">
-                        <div class="timeline-role">B.Sc. &amp; M.Sc. in Mathematics</div>
-                        <div class="timeline-inst">Çanakkale Onsekiz Mart University</div>
-                        <div class="timeline-period">2010 &ndash; 2016</div>
-                    </div>
+                <div class="role-box">
+                    <span class="role-badge">BAP Research Project</span>
+                    <div class="role-journal">Novel FMEA Methods Based on Soft Decision-Making for Maritime Risk Analysis</div>
+                    <div class="role-time">Coordinator / Principal Investigator &bull; Completed</div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
         <!-- Contact Section -->
         <section id="contact" class="glass-card" style="text-align: center;">
-            <h2 class="section-title" style="justify-content: center; margin-bottom: 1rem;">
-                <i class="fa-solid fa-paper-plane"></i> Get in Touch
+            <h2 class="section-title" style="justify-content: center; margin-bottom: 0.8rem;">
+                <i class="fa-solid fa-paper-plane"></i> Contact &amp; Academic Collaboration
             </h2>
-            <p style="max-width: 600px; margin: 0 auto 1.5rem; color: var(--text-body);">
-                Interested in research collaborations on soft decision-making, machine learning applications in maritime systems, or editorial inquiries? Feel free to reach out.
+            <p style="max-width: 650px; margin: 0 auto 1.6rem; color: var(--text-body);">
+                For joint research initiatives in soft decision-making, machine learning applications in maritime systems, or editorial assessments, feel free to reach out.
             </p>
-            <div class="quick-links" style="justify-content: center;">
-                <a href="mailto:smemis@bandirma.edu.tr" class="btn-link">
-                    <i class="fa-solid fa-envelope"></i> smemis@bandirma.edu.tr
+            <div class="profiles-grid" style="justify-content: center; max-width: 800px; margin: 0 auto;">
+                <a href="mailto:smemis@bandirma.edu.tr" class="profile-btn">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>smemis@bandirma.edu.tr</span>
                 </a>
-                <a href="mailto:samettmemis@gmail.com" class="btn-link">
-                    <i class="fa-solid fa-inbox"></i> samettmemis@gmail.com
+                <a href="mailto:samettmemis@gmail.com" class="profile-btn">
+                    <i class="fa-solid fa-inbox"></i>
+                    <span>samettmemis@gmail.com</span>
                 </a>
-                <a href="https://denizcilik.bandirma.edu.tr" target="_blank" class="btn-link">
-                    <i class="fa-solid fa-building-columns"></i> Faculty of Maritime, Room G-407
+                <a href="https://denizcilik.bandirma.edu.tr" target="_blank" rel="noopener" class="profile-btn">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span>Faculty of Maritime, Room G-407</span>
                 </a>
             </div>
         </section>
@@ -293,7 +429,7 @@
         <p>&copy; 2026 Assoc. Prof. Dr. Samet Memiş. Deployed securely on <a href="https://sametmemis.com">sametmemis.com</a> via GitHub Pages.</p>
     </footer>
 
-    <!-- Interactive Script -->
+    <!-- Interactive Mouse-Reactive Quantum Mesh Script -->
     <script src="network.js"></script>
 </body>
 </html>
