@@ -21,6 +21,11 @@
     scroll-behavior: smooth;
 }
 
+/* Fix navbar covering headers when scrolling */
+.scroll-target {
+    scroll-margin-top: 90px;
+}
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--bg-base);
@@ -39,7 +44,7 @@ body {
     height: 100vh;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 /* Header */
@@ -47,7 +52,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.94);
+    background: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
 }
@@ -408,6 +413,74 @@ header {
     border-top: 1px solid #f1f5f9;
 }
 
+/* Publications Grid & Color Cards */
+.pub-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding-top: 1rem;
+}
+
+.pub-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left-width: 5px;
+    border-radius: 10px;
+    padding: 1.1rem 1.3rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    transition: transform 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
+}
+
+.pub-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.pub-card.border-green { border-left-color: #10b981; }
+.pub-card.border-blue { border-left-color: #0284c7; }
+.pub-card.border-purple { border-left-color: #8b5cf6; }
+.pub-card.border-teal { border-left-color: #0d9488; }
+.pub-card.border-indigo { border-left-color: #6366f1; }
+.pub-card.border-rose { border-left-color: #f43f5e; }
+.pub-card.border-cyan { border-left-color: #06b6d4; }
+.pub-card.border-amber { border-left-color: #f59e0b; }
+.pub-card.border-emerald { border-left-color: #059669; }
+
+.pub-title {
+    font-size: 0.96rem;
+    font-weight: 700;
+    color: var(--text-title);
+    line-height: 1.45;
+}
+
+.pub-meta {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.35rem;
+}
+
+.pub-badge-q1, .pub-badge-q2, .pub-badge-q3 {
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 0.1rem 0.45rem;
+    border-radius: 4px;
+}
+.pub-badge-q1 { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+.pub-badge-q2 { background: #dbeafe; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.pub-badge-q3 { background: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+
+.pub-doi {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--primary);
+    text-decoration: none;
+}
+.pub-doi:hover { text-decoration: underline; }
+
 /* Line-by-Line Structured Lists */
 .line-list {
     display: flex;
@@ -505,23 +578,8 @@ header {
     line-height: 1.55;
 }
 
-.academic-ordered-list li strong {
-    color: var(--text-title);
-}
-
-.academic-ordered-list li em {
-    color: var(--text-title);
-    font-style: italic;
-}
-
-.subgroup-title {
-    font-size: 0.95rem;
-    font-weight: 800;
-    color: var(--text-title);
-    padding-top: 1rem;
-    border-bottom: 1px solid #e2e8f0;
-    padding-bottom: 0.4rem;
-}
+.academic-ordered-list li strong { color: var(--text-title); }
+.academic-ordered-list li em { color: var(--text-title); font-style: italic; }
 
 /* Contact Email Cards */
 .contact-intro {
