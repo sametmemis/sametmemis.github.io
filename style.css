@@ -403,7 +403,6 @@ header {
     border-top: 1px solid #f1f5f9;
 }
 
-/* Compact Chips for Peer Review */
 .compact-badges-grid {
     display: flex;
     flex-wrap: wrap;
@@ -441,7 +440,7 @@ header {
 .journal-chip.cyan { border-left-color: #06b6d4; }
 .journal-chip.dark { border-left-color: #475569; }
 
-/* Publications Grid & Color Cards with Embedded Index Column */
+/* Publications Grid Architecture */
 .pub-grid {
     display: flex;
     flex-direction: column;
@@ -464,32 +463,35 @@ header {
     box-shadow: var(--shadow-hover);
 }
 
-/* Distinct Vertical Side Column with Centered Number */
+/* Left Vertical Number Badge */
 .pub-index {
-    width: 48px;
-    min-width: 48px;
+    width: 54px;
+    min-width: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     font-weight: 800;
     color: #ffffff;
     user-select: none;
 }
 
-.pub-card.border-blue .pub-index { background: #0284c7; }
-.pub-card.border-purple .pub-index { background: #8b5cf6; }
-.pub-card.border-green .pub-index { background: #10b981; }
-.pub-card.border-teal .pub-index { background: #0d9488; }
-.pub-card.border-rose .pub-index { background: #f43f5e; }
-.pub-card.border-indigo .pub-index { background: #6366f1; }
-.pub-card.border-amber .pub-index { background: #f59e0b; }
-.pub-card.border-cyan .pub-index { background: #06b6d4; }
-.pub-card.border-emerald .pub-index { background: #059669; }
+/* Quarter & Index Colors */
+.pub-card.border-q1 .pub-index { background: #10b981; } /* Q1 - Emerald */
+.pub-card.border-q2 .pub-index { background: #0284c7; } /* Q2 - Blue */
+.pub-card.border-q3 .pub-index { background: #6366f1; } /* Q3 - Indigo */
+.pub-card.border-q4 .pub-index { background: #f59e0b; } /* Q4 - Amber/Orange */
+.pub-card.border-esci .pub-index { background: #8b5cf6; } /* ESCI - Purple */
+.pub-card.border-scopus .pub-index { background: #f97316; } /* Scopus - Coral Orange */
+.pub-card.border-other .pub-index { background: #06b6d4; } /* Other - Cyan */
+.pub-card.border-chapter .pub-index { background: #7e22ce; } /* Book Chapter - Deep Purple */
+.pub-card.border-proc .pub-index { background: #4f46e5; } /* Proceedings - Dark Indigo */
+.pub-card.border-abstract .pub-index { background: #d97706; } /* Abstracts - Warm Amber */
+.pub-card.border-poster .pub-index { background: #0d9488; } /* Poster - Teal */
 
 .pub-body {
-    padding: 1.1rem 1.3rem;
+    padding: 1rem 1.3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -513,7 +515,7 @@ header {
     margin-top: 0.35rem;
 }
 
-.pub-badge-q1, .pub-badge-q2, .pub-badge-q3 {
+.pub-badge-q1, .pub-badge-q2, .pub-badge-q3, .pub-badge-q4, .pub-badge-esci, .pub-badge-scopus {
     font-size: 0.72rem;
     font-weight: 800;
     padding: 0.1rem 0.45rem;
@@ -521,7 +523,10 @@ header {
 }
 .pub-badge-q1 { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
 .pub-badge-q2 { background: #dbeafe; color: #1d4ed8; border: 1px solid #bfdbfe; }
-.pub-badge-q3 { background: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+.pub-badge-q3 { background: #e0e7ff; color: #4338ca; border: 1px solid #c7d2fe; }
+.pub-badge-q4 { background: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+.pub-badge-esci { background: #f3e8ff; color: #7e22ce; border: 1px solid #e9d5ff; }
+.pub-badge-scopus { background: #ffedd5; color: #c2410c; border: 1px solid #fed7aa; }
 
 .format-badge {
     font-size: 0.72rem;
@@ -593,19 +598,32 @@ header {
     text-align: center;
 }
 
-/* Vertical Pill Stack for Projects (Sponsor + Role) */
+/* Vertical 3-Pill Stack for Projects: Sponsor, Role & Status */
 .project-pill-stack {
     display: flex;
     flex-direction: column;
     gap: 0.35rem;
-    min-width: 120px;
+    min-width: 125px;
     align-items: center;
 }
-
+.project-index {
+    width: 38px;
+    min-width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--primary);
+    background: #f1f5f9;
+    border-radius: 6px;
+    align-self: stretch;
+}
 .line-badge {
     font-size: 0.72rem;
     font-weight: 800;
-    padding: 0.2rem 0.6rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 4px;
     white-space: nowrap;
     width: 100%;
@@ -617,23 +635,62 @@ header {
 .line-badge.tubitak { background: #fee2e2; color: #b91c1c; }
 .line-badge.bap { background: #fef3c7; color: #b45309; }
 
+/* Distinct Non-Conflicting Role Badges */
 .role-pill {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 700;
-    padding: 0.12rem 0.4rem;
+    padding: 0.16rem 0.4rem;
     border-radius: 4px;
-    background: #f1f5f9;
-    color: #475569;
     white-space: nowrap;
     text-align: center;
     width: 100%;
 }
 
+/* Yürütücü / PI: Zümrüt Yeşili */
 .role-pill.pi {
-    background: #dcfce7;
-    color: #166534;
-    border: 1px solid #bbf7d0;
+    background: #059669;
+    color: #ffffff;
+}
+
+/* Araştırmacı / Researcher: Lacivert / İndigo */
+.role-pill.researcher {
+    background: #4338ca;
+    color: #ffffff;
+}
+
+/* Status Badges */
+.status-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 800;
+    padding: 0.14rem 0.45rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.03em;
+}
+
+/* Ongoing: Açık Gök Mavisi Çerçeveli */
+.status-ongoing { 
+    background: #f0fdf4; 
+    color: #166534; 
+    border: 1px solid #86efac; 
+}
+
+/* Completed: Açık Gri */
+.status-completed { 
+    background: #f1f5f9; 
+    color: #64748b; 
+    border: 1px solid #cbd5e1; 
+}
+
+/* Submitted: Mor */
+.status-submitted { 
+    background: #f3e8ff; 
+    color: #7e22ce; 
+    border: 1px solid #e9d5ff; 
 }
 
 .line-content {
