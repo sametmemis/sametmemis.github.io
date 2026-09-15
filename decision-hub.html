@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Hub | Multi-Criteria Decision-Making &amp; Soft Decision-Making Platform</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- KaTeX LaTeX Engine -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Paralel CSS -->
+    <link rel="stylesheet" href="decision-hub-style.css">
+</head>
+<body>
+
+    <canvas id="quantum-circuit-canvas"></canvas>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <i class="fa-solid fa-microchip quantum-spin"></i>
+                <span>Decision Hub</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to Homepage</a></li>
+                <li><a href="https://github.com/sametmemis" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repositories</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-content">
+        
+        <!-- Platform Hero Card -->
+        <section class="glass-card hub-hero">
+            <div class="role-badge-tag"><i class="fa-solid fa-brain-circuit"></i> Zero-Server Client-Side Engine</div>
+            <h1 class="hub-main-title">Multi-Criteria Decision-Making &amp; Soft Decision-Making Platform</h1>
+            <p class="hub-subtitle">
+                An open-access platform designed for researchers, social scientists, and systems engineers. Execute classical MCDM algorithms, evaluate fuzzy environments, and benchmark with <strong>fpfs-matrix soft decision-making models</strong> directly in your browser.
+            </p>
+        </section>
+
+        <!-- Method Selector Card -->
+        <section class="glass-card">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> 1. Select Decision Method</h2>
+            </div>
+            
+            <div class="algorithm-selector-grid four-col-grid">
+                
+                <!-- Group 1: Classical MCDM -->
+                <div class="selector-group">
+                    <span class="group-label">Classical MCDM</span>
+                    
+                    <label class="algo-option">
+                        <input type="radio" name="selected-algo" value="AHP" checked onchange="handleSingleAlgoChange(this)">
+                        <div class="algo-card-inner">
+                            <strong>Analytic Hierarchy Process (AHP)</strong>
+                            <p>Saaty pairwise comparisons, priority vector &amp; CR consistency check</p>
+                            <span class="status-pill status-ongoing">Active</span>
+                        </div>
+                    </label>
+
+                    <label class="algo-option">
+                        <input type="radio" name="selected-algo" value="TOPSIS" onchange="handleSingleAlgoChange(this)">
+                        <div class="algo-card-inner">
+                            <strong>TOPSIS</strong>
+                            <p>Vector normalization, PIS/NIS distances &amp; relative closeness \(C_i\)</p>
+                            <span class="status-pill status-ongoing">Active</span>
+                        </div>
+                    </label>
+
+                    <label class="algo-option">
+                        <input type="radio" name="selected-algo" value="VIKOR" onchange="handleSingleAlgoChange(this)">
+                        <div class="algo-card-inner">
+                            <strong>VIKOR</strong>
+                            <p>Compromise ranking multicriteria optimization based on \(L_p\)-metric</p>
+                            <span class="status-pill status-completed">Upcoming</span>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Group 2: Fuzzy MCDM -->
+                <div class="selector-group">
+                    <span class="group-label">Fuzzy MCDM</span>
+                    
+                    <label class="algo-option">
+                        <input type="radio" name="selected-algo" value="FAHP" onchange="handleSingleAlgoChange(this)">
+                        <div class="algo-card-inner">
+                            <strong>Fuzzy AHP (Extent Analysis)</strong>
+                            <p>Chang triangular fuzzy numbers (TFN: \(l, m, u\)) pairwise model</p>
+                            <span class="status-pill status-completed">Upcoming</span>
+                        </div>
+                    </label>
+
+                    <label class="algo-option">
+                        <input type="radio" name="selected-algo" value="FTOPSIS" onchange="handleSingleAlgoChange(this)">
+                        <div class="algo-card-inner">
+                            <strong>Fuzzy TOPSIS</strong>
+                            <p>Fuzzy positive/negative ideal distance evaluation under uncertainty</p>
+                            <span class="status-pill status-completed">Upcoming</span>
+                        </div>
+                    </label>
+                </div>
+
+				<!-- Group 3: Soft Decision Making (Custom Styled Comboboxes) -->
+                <div class="selector-group sdm-group">
+                    <span class="group-label">Soft Decision Making</span>
+                    
+                    <!-- Sub-category 1: fpfs-matrices-based -->
+                    <div class="sdm-subgroup-header">
+                        <i class="fa-solid fa-layer-group"></i> fpfs-matrices-based
+                    </div>
+
+                    <div class="custom-combobox" id="combo-fpfs">
+                        <div class="combo-trigger" onclick="toggleCombobox('combo-fpfs')">
+                            <span class="combo-selected-title" id="fpfs-selected-label">sMBR01</span>
+                            <span class="status-pill status-ongoing" id="fpfs-selected-badge">Active</span>
+                            <i class="fa-solid fa-chevron-down combo-arrow"></i>
+                        </div>
+                        <div class="combo-dropdown">
+                            <div class="combo-item active-item" onclick="selectFPFSModel('sMBR01', 'Active')">
+                                <span class="ci-name">sMBR01</span>
+                                <span class="status-pill status-ongoing">Active</span>
+                            </div>
+                            <div class="combo-item" onclick="selectFPFSModel('PEM', 'Active')">
+                                <span class="ci-name">PEM</span>
+                                <span class="status-pill status-ongoing">Active</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('MBR01')">
+                                <span class="ci-name">MBR01</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('MRB02')">
+                                <span class="ci-name">MRB02</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('CCE10')">
+                                <span class="ci-name">CCE10</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('CCE11')">
+                                <span class="ci-name">CCE11</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('CD12')">
+                                <span class="ci-name">CD12</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('CD12_2')">
+                                <span class="ci-name">CD12_2</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('CE10')">
+                                <span class="ci-name">CE10</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('CE12')">
+                                <span class="ci-name">CE12</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('DB12')">
+                                <span class="ci-name">DB12</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('E15')">
+                                <span class="ci-name">E15</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('EK15')">
+                                <span class="ci-name">EK15</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('KKT13')">
+                                <span class="ci-name">KKT13</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('RM13')">
+                                <span class="ci-name">RM13</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('VR13')">
+                                <span class="ci-name">VR13</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('ZZ16')">
+                                <span class="ci-name">ZZ16</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('ZZ16_2')">
+                                <span class="ci-name">ZZ16_2</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-category 2: ifpifs-matrices-based -->
+                    <div class="sdm-subgroup-header" style="margin-top: 0.8rem;">
+                        <i class="fa-solid fa-diagram-project"></i> ifpifs-matrices-based
+                    </div>
+
+                    <div class="custom-combobox" id="combo-ifpifs">
+                        <div class="combo-trigger" onclick="toggleCombobox('combo-ifpifs')">
+                            <span class="combo-selected-title" id="ifpifs-selected-label">isMBR01</span>
+                            <span class="status-pill status-completed" id="ifpifs-selected-badge">Upcoming</span>
+                            <i class="fa-solid fa-chevron-down combo-arrow"></i>
+                        </div>
+                        <div class="combo-dropdown">
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('isMBR01')">
+                                <span class="ci-name">isMBR01</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iPEM')">
+                                <span class="ci-name">iPEM</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iMBR01')">
+                                <span class="ci-name">iMBR01</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iMRB02')">
+                                <span class="ci-name">iMRB02</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iCCE10')">
+                                <span class="ci-name">iCCE10</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iCCE11')">
+                                <span class="ci-name">iCCE11</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iCD12')">
+                                <span class="ci-name">iCD12</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iCD12_2')">
+                                <span class="ci-name">iCD12_2</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iCE10')">
+                                <span class="ci-name">iCE10</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iCE12')">
+                                <span class="ci-name">iCE12</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iDB12')">
+                                <span class="ci-name">iDB12</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iE15')">
+                                <span class="ci-name">iE15</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iEK15')">
+                                <span class="ci-name">iEK15</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iKKT13')">
+                                <span class="ci-name">iKKT13</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iRM13')">
+                                <span class="ci-name">iRM13</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iVR13')">
+                                <span class="ci-name">iVR13</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iZZ16')">
+                                <span class="ci-name">iZZ16</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                            <div class="combo-item upcoming-item" onclick="selectUpcomingModel('iZZ16_2')">
+                                <span class="ci-name">iZZ16_2</span>
+                                <span class="status-pill status-completed">Upcoming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 4: Hybrid Decision Models -->
+                <div class="selector-group">
+                    <span class="group-label">Hybrid Decision Models</span>
+
+                    <label class="algo-option">
+                        <input type="radio" name="selected-algo" value="DELPHI-AHP-PEM" onchange="handleSingleAlgoChange(this)">
+                        <div class="algo-card-inner">
+                            <strong>DELPHI-AHP-PEM</strong>
+                            <p>Delphi consensus, AHP criteria weight extraction &amp; Picture Fuzzy PEM</p>
+                            <span class="status-pill status-submitted">Upcoming</span>
+                        </div>
+                    </label>
+
+                    <label class="algo-option">
+                        <input type="radio" name="selected-algo" value="IDOCRIW-SDM" onchange="handleSingleAlgoChange(this)">
+                        <div class="algo-card-inner">
+                            <strong>IDOCRIW-SDM</strong>
+                            <p>Integrated determination of objective criteria weights combined with soft decision-making</p>
+                            <span class="status-pill status-submitted">Upcoming</span>
+                        </div>
+                    </label>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Workspace & Matrix Calculator Card -->
+        <section class="glass-card">
+            <div class="workspace-header">
+                <div>
+                    <h2 class="section-title" id="active-algo-title"><i class="fa-solid fa-sliders"></i> sMBR01 Configuration</h2>
+                    <p class="section-desc" id="active-algo-desc">Enter parameter weights \(a(1,:)\) and candidate evaluations \(a(2:m,:)\) in \([0,1]\).</p>
+                </div>
+                <div class="citation-badge" id="algo-citation">
+                    Enginoğlu, S., Memiş, S., 2018. Int. J. Latest Eng. Res. Appl., 3(9), 1-9.
+                </div>
+            </div>
+
+            <!-- Dimension Controls -->
+            <div class="dss-controls-bar">
+                <div class="dss-input-group" id="dim-alt-wrap">
+                    <label id="lbl-alt">Alternatives (\(m-1\)):</label>
+                    <input type="number" id="hub-num-alt" min="2" max="15" value="4">
+                </div>
+                <div class="dss-input-group" id="dim-crit-wrap">
+                    <label id="lbl-crit">Criteria (\(n\)):</label>
+                    <input type="number" id="hub-num-crit" min="1" max="12" value="3">
+                </div>
+                <button type="button" class="tech-pill active-pill-btn" onclick="generateInputMatrix()">
+                    <i class="fa-solid fa-table-cells"></i> Build Matrix
+                </button>
+                <button type="button" class="tech-pill" onclick="fillRandomData()">
+                    <i class="fa-solid fa-shuffle"></i> Random Data
+                </button>
+                <button type="button" class="dss-launch-btn calculate-btn" onclick="executeAlgorithm()">
+                    <i class="fa-solid fa-play"></i> Compute Model
+                </button>
+            </div>
+
+            <!-- Spreadsheet Grid -->
+            <div class="dss-table-wrapper">
+                <table id="hub-data-table" class="dss-matrix-table"></table>
+            </div>
+
+            <!-- Results Output -->
+            <div id="hub-results-panel" class="results-panel" style="display: none;">
+                <div class="result-top-banner">
+                    <div class="winner-box">
+                        <i class="fa-solid fa-trophy trophy-icon"></i>
+                        <div>
+                            <span class="winner-label">Optimal Evaluation</span>
+                            <h3 id="hub-winner-name">Alternative u1</h3>
+                        </div>
+                    </div>
+                    <button class="tech-pill" onclick="copyCitation()">
+                        <i class="fa-regular fa-copy"></i> Copy Citation (BibTeX)
+                    </button>
+                </div>
+
+                <div class="dss-table-wrapper">
+                    <table class="dss-result-table">
+                        <thead id="results-thead"></thead>
+                        <tbody id="results-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Dr. Samet MEMİŞ &bull; Decision Hub &bull; Back to <a href="index.html">sametmemis.com</a></p>
+    </footer>
+
+    <!-- Scripts: Canvas and Decision Hub Engine -->
+    <script src="network.js"></script>
+    <script src="decision-hub-engine.js"></script>
+</body>
+</html>
