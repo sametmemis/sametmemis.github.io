@@ -25,6 +25,10 @@
     scroll-margin-top: 90px;
 }
 
+#about {
+    scroll-margin-top: 100px;
+}
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--bg-base);
@@ -775,6 +779,8 @@ header {
 .line-badge.r-d { background: #e0f2fe; color: #0369a1; }
 .line-badge.tubitak { background: #fee2e2; color: #b91c1c; }
 .line-badge.bap { background: #fef3c7; color: #b45309; }
+.line-badge.adep { background: #ede9fe; color: #6d28d9; }
+.line-badge.tuseb { background: #dcfce7; color: #15803d; }
 
 .role-pill {
     font-family: 'JetBrains Mono', monospace;
