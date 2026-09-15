@@ -942,3 +942,45 @@ footer a { color: var(--primary); text-decoration: none; }
     .direct-email-container { flex-direction: column; }
     .direct-email-card { width: 100%; }
 }
+
+.icon-btn i {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tr-badge-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: -0.05em;
+    border: 1.5px solid currentColor;
+    border-radius: 4px;
+    padding: 0.05rem 0.2rem;
+    line-height: 1;
+}
+
+/* TR Dizin İkonu Dengesi */
+.icon-btn .brand-svg-trdizin {
+    width: 27px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s ease;
+}
+
+/* MathWorks MATLAB İkonu Dengesi (Optik Hacim Eşitleme) */
+.icon-btn .brand-svg-exact {
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s ease;
+}
+
+/* Hover Büyüme Oranı */
+.icon-btn:hover .brand-svg-trdizin,
+.icon-btn:hover .brand-svg-exact {
+    transform: scale(1.1);
+}
